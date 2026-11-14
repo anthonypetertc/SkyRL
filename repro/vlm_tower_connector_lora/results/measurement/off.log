@@ -1,0 +1,376 @@
+Installed 273 packages in 18.24s
+Bytecode compiled 33711 files in 9.04s
+W1114 11:14:33.618000 366 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1114 11:14:33.619000 366 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1114 11:14:33.620000 366 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(MainProcess pid=366) INFO 11-14 11:14:39 [startup.py:96] non-default args: {'dtype': 'bfloat16', 'seed': 7819, 'max_model_len': 512, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.85, 'max_num_batched_tokens': 512, 'max_num_seqs': 1, 'disable_log_stats': True, 'revision': '89644892e4d85e24eaac8bacfd4f463576704203', 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 1, 'video': 0}, 'mm_processor_kwargs': {'min_pixels': 16384, 'max_pixels': 16384}, 'mm_processor_cache_gb': 0, 'mm_device_do_normalize': False, 'enable_lora': True, 'max_lora_rank': 8, 'compilation_config': {'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': None, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}, 'model': 'Qwen/Qwen3-VL-2B-Instruct'}
+(MainProcess pid=366) INFO 11-14 11:14:49 [model.py:744] Resolved architecture: Qwen3VLForConditionalGeneration
+(MainProcess pid=366) INFO 11-14 11:14:49 [model.py:2170] Using max model len 512
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 1403.20it/s]
+(MainProcess pid=366) INFO 11-14 11:14:49 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=512.
+(MainProcess pid=366) WARNING 11-14 11:14:50 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=366) WARNING 11-14 11:14:50 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=366) INFO 11-14 11:14:50 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=366) INFO 11-14 11:14:50 [vllm.py:2005] Cudagraph is disabled under eager mode
+(MainProcess pid=366) INFO 11-14 11:14:50 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+W1114 11:14:58.884000 420 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1114 11:14:58.885000 420 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1114 11:14:58.886000 420 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(EngineCore pid=420) INFO 11-14 11:15:03 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='Qwen/Qwen3-VL-2B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen3-VL-2B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=89644892e4d85e24eaac8bacfd4f463576704203, tokenizer_revision=89644892e4d85e24eaac8bacfd4f463576704203, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=512, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=7819, served_model_name=Qwen/Qwen3-VL-2B-Instruct, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [512], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(MainProcess pid=366) INFO 11-14 11:15:04 [base.py:283] Multi-modal warmup completed in 8.805s
+(EngineCore pid=420) INFO 11-14 11:15:06 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_8c7cf94fa974431eb0e045817d99f4bd backend=nccl
+(EngineCore pid=420) INFO 11-14 11:15:06 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=420) INFO 11-14 11:15:06 [gpu_worker.py:513] Using V2 Model Runner
+(EngineCore pid=420) INFO 11-14 11:15:07 [model_runner.py:399] Loading model from scratch...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 1492.88it/s]
+(EngineCore pid=420) INFO 11-14 11:15:07 [cuda.py:567] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+(EngineCore pid=420) INFO 11-14 11:15:07 [mm_encoder_attention.py:372] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+(EngineCore pid=420) INFO 11-14 11:15:08 [cuda.py:508] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=420) INFO 11-14 11:15:08 [flash_attn.py:1122] Using FlashAttention version 3
+(EngineCore pid=420) INFO 11-14 11:15:08 [base_loader.py:82] Initializing model took 1.385964 seconds
+(EngineCore pid=420) INFO 11-14 11:15:08 [weight_utils.py:1144] Filesystem type for checkpoints: EXT4. Checkpoint size: 3.96 GiB. Available RAM: 24.78 GiB.
+(EngineCore pid=420) INFO 11-14 11:15:08 [weight_utils.py:1167] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.28it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.28it/s]
+
+(EngineCore pid=420) INFO 11-14 11:15:09 [default_loader.py:506] Loading weights took 1.00 seconds
+(EngineCore pid=420) INFO 11-14 11:15:10 [punica_selector.py:20] Using PunicaWrapperGPU.
+(EngineCore pid=420) INFO 11-14 11:15:10 [model_manager.py:251] Qwen3VLForConditionalGeneration supports adding LoRA to the tower modules. If needed, please set `enable_tower_connector_lora=True`.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.merger.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.merger.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.0.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.0.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.1.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.1.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.2.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.deepstack_merger_list.2.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.0.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.0.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.0.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.0.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.1.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.1.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.1.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.1.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.2.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.2.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.2.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.2.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.3.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.3.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.3.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.3.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.4.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.4.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.4.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.4.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.5.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.5.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.5.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.5.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.6.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.6.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.6.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.6.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.7.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.7.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.7.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.7.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.8.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.8.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.8.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.8.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.9.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.9.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.9.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.9.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.10.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.10.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.10.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.10.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.11.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.11.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.11.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.11.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.12.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.12.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.12.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.12.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.13.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.13.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.13.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.13.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.14.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.14.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.14.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.14.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.15.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.15.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.15.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.15.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.16.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.16.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.16.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.16.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.17.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.17.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.17.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.17.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.18.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.18.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.18.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.18.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.19.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.19.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.19.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.19.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.20.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.20.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.20.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.20.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.21.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.21.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.21.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.21.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.22.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.22.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.22.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.22.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.23.attn.qkv will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.23.attn.proj will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.23.mlp.linear_fc1 will be ignored.
+(EngineCore pid=420) WARNING 11-14 11:15:10 [model_manager.py:505] Regarding Qwen3VLForConditionalGeneration, no matching PunicaWrapper is found; visual.blocks.23.mlp.linear_fc2 will be ignored.
+(EngineCore pid=420) INFO 11-14 11:15:11 [model_runner.py:428] Model loading took 4.08 GiB memory and 4.554591 seconds
+(EngineCore pid=420) INFO 11-14 11:15:11 [topk_topp_sampler.py:149] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=420) WARNING 11-14 11:15:11 [torch_utils.py:269] OMP_NUM_THREADS=4 is set; leaving Torch threads at 4 for serving. Multi-threaded torch CPU ops during serving can degrade performance through spin-wait contention and cgroup CPU-quota throttling.
+(EngineCore pid=420) INFO 11-14 11:15:11 [utils.py:381] Using LBNHC KV cache layout.
+(EngineCore pid=420) INFO 11-14 11:15:15 [encoder_runner.py:131] Encoder cache will be initialized with a budget of 512 tokens, and profiled with 1 image items of the maximum feature size.
+(EngineCore pid=420) WARNING 11-14 11:15:16 [utils.py:276] Using default LoRA kernel configs
+(EngineCore pid=420) INFO 11-14 11:15:22 [gpu_worker.py:772] Available KV cache memory: 12.42 GiB
+(EngineCore pid=420) INFO 11-14 11:15:22 [kv_cache_utils.py:1147] GPU KV cache size: 116,272 tokens, Maximum concurrency for 512 tokens per request: 227.09x
+(EngineCore pid=420) INFO 11-14 11:15:22 [qwen_vl_triton_warmup.py:57] Warmed position embedding and vision rotary kernels on grids=[(1, 16, 16), (1, 16, 2), (1, 2, 16), (1, 2, 2)].
+(EngineCore pid=420) INFO 11-14 11:15:22 [qwen_vl_triton_warmup.py:102] Warmed M-RoPE Triton kernels.
+(EngineCore pid=420) INFO 11-14 11:15:22 [kernel_warmup.py:485] Using FlashInfer managed autotune cache (root=flashinfer default). Pass --disable-flashinfer-autotune to skip autotuning.
+2026-11-14 11:15:22,932 - INFO - autotuner.py:1048 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-11-14 11:15:23,038 - INFO - autotune_cache.py:495 - flashinfer.jit: [Autotuner]: Managed autotune cache attached for this process: ManagedAutotuneCache(env_dir='/root/.cache/flashinfer/autotune/v2/7007cd1423ec6b12', hits=0, misses=0)
+(EngineCore pid=420) INFO 11-14 11:15:23 [kernel_warmup.py:371] Running FlashInfer autotune with 512 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512).
+2026-11-14 11:15:23,128 - INFO - autotuner.py:1071 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=420) INFO 11-14 11:15:23 [gpu_worker.py:1066] Free memory on device (19.33/19.62 GiB) on startup. Desired GPU memory utilization is (0.85, 16.68 GiB). Actual usage is 4.24 GiB for consumed memory (weights + non-torch), 0.02 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=13178851738` (12.27 GiB) to fit into requested memory, or `--kv-cache-memory=16019929088` (14.92 GiB) to fully utilize gpu memory. Current kv cache memory in use is 12.42 GiB.
+(EngineCore pid=420) INFO 11-14 11:15:23 [core.py:412] init engine (profile, create kv cache, warmup model) took 12.15 s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=420) WARNING 11-14 11:15:23 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(EngineCore pid=420) WARNING 11-14 11:15:23 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=420) INFO 11-14 11:15:23 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=420) INFO 11-14 11:15:23 [vllm.py:2005] Cudagraph is disabled under eager mode
+(EngineCore pid=420) INFO 11-14 11:15:23 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+(MainProcess pid=366) INFO 11-14 11:15:24 [hf.py:736] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+(MainProcess pid=366) WARNING 11-14 11:15:25 [input_processor.py:289] vLLM has deprecated support for supporting different tokenizers for different LoRAs. By default, vLLM uses base model's tokenizer. If you are using a LoRA with its own tokenizer, consider specifying `--tokenizer [lora_path]` to use the LoRA tokenizer.
+{
+  "stage": "off",
+  "enable_tower_connector_lora": false,
+  "cases": {
+    "base": {
+      "logprobs": [
+        -11.761186599731445,
+        -4.018153190612793,
+        -0.06675697863101959,
+        -0.031326137483119965,
+        -0.028843030333518982,
+        -0.28862330317497253,
+        -0.00014780859055463225,
+        -0.000537727726623416,
+        -0.04559338465332985,
+        -3.562680959701538,
+        -0.04928341135382652,
+        -0.006446637213230133
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    },
+    "vision_only": {
+      "logprobs": [
+        -11.761186599731445,
+        -4.018153190612793,
+        -0.06675697863101959,
+        -0.031326137483119965,
+        -0.028843030333518982,
+        -0.28862330317497253,
+        -0.00014780859055463225,
+        -0.000537727726623416,
+        -0.04559338465332985,
+        -3.562680959701538,
+        -0.04928341135382652,
+        -0.006446637213230133
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    },
+    "full": {
+      "logprobs": [
+        -11.261192321777344,
+        -3.773247718811035,
+        -0.058842018246650696,
+        -0.021954122930765152,
+        -0.028182175010442734,
+        -0.24913547933101654,
+        -0.00015484087634831667,
+        -0.00039748396375216544,
+        -0.036016613245010376,
+        -3.5653185844421387,
+        -0.04915188252925873,
+        -0.00490390881896019
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    }
+  },
+  "hf_bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+  "mm_device_do_normalize": false,
+  "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "processed_images": [
+    {
+      "original_pixel_values_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "original_difference_from_hf": {
+        "max_abs": 2.0,
+        "mean_abs": 0.9149577021598816,
+        "fraction_unequal": 0.4574788510799408
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    }
+  ],
+  "returned_prompt_ids": [
+    151644,
+    872,
+    198,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    74785,
+    279,
+    27197,
+    20816,
+    304,
+    419,
+    2168,
+    26753,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198,
+    3862,
+    374,
+    264,
+    2518,
+    22756,
+    323,
+    264,
+    6303,
+    12671,
+    389,
+    264,
+    4158
+  ]
+}
+(MainProcess pid=366) INFO 11-14 11:15:28 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=420) INFO 11-14 11:15:28 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=420) INFO 11-14 11:15:28 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=420) INFO 11-14 11:15:28 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=420) INFO 11-14 11:15:28 [core.py:1573] [shutdown] EngineCore: exiting busy loop

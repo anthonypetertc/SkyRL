@@ -1,0 +1,272 @@
+Installed 273 packages in 18.38s
+Bytecode compiled 33711 files in 8.97s
+W1114 11:16:17.450000 628 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1114 11:16:17.451000 628 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1114 11:16:17.451000 628 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(MainProcess pid=628) INFO 11-14 11:16:22 [startup.py:96] non-default args: {'dtype': 'bfloat16', 'seed': 7819, 'max_model_len': 512, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.85, 'max_num_batched_tokens': 512, 'max_num_seqs': 1, 'disable_log_stats': True, 'revision': '89644892e4d85e24eaac8bacfd4f463576704203', 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 1, 'video': 0}, 'mm_processor_kwargs': {'min_pixels': 16384, 'max_pixels': 16384}, 'mm_processor_cache_gb': 0, 'mm_device_do_normalize': False, 'enable_lora': True, 'max_lora_rank': 8, 'enable_tower_connector_lora': True, 'compilation_config': {'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': None, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}, 'model': 'Qwen/Qwen3-VL-2B-Instruct'}
+(MainProcess pid=628) INFO 11-14 11:16:22 [model.py:744] Resolved architecture: Qwen3VLForConditionalGeneration
+(MainProcess pid=628) INFO 11-14 11:16:22 [model.py:2170] Using max model len 512
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 1482.75it/s]
+(MainProcess pid=628) INFO 11-14 11:16:23 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=512.
+(MainProcess pid=628) WARNING 11-14 11:16:23 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=628) WARNING 11-14 11:16:23 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=628) INFO 11-14 11:16:23 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=628) INFO 11-14 11:16:23 [vllm.py:2005] Cudagraph is disabled under eager mode
+(MainProcess pid=628) INFO 11-14 11:16:23 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+W1114 11:16:32.367000 671 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1114 11:16:32.368000 671 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1114 11:16:32.368000 671 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(EngineCore pid=671) INFO 11-14 11:16:37 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='Qwen/Qwen3-VL-2B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen3-VL-2B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=89644892e4d85e24eaac8bacfd4f463576704203, tokenizer_revision=89644892e4d85e24eaac8bacfd4f463576704203, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=512, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=7819, served_model_name=Qwen/Qwen3-VL-2B-Instruct, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [512], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(MainProcess pid=628) INFO 11-14 11:16:37 [base.py:283] Multi-modal warmup completed in 8.866s
+(EngineCore pid=671) INFO 11-14 11:16:39 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_1bc5b9766b57498fa2801e0151dcdc02 backend=nccl
+(EngineCore pid=671) INFO 11-14 11:16:39 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=671) INFO 11-14 11:16:39 [gpu_worker.py:513] Using V2 Model Runner
+(EngineCore pid=671) INFO 11-14 11:16:40 [model_runner.py:399] Loading model from scratch...
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 1621.41it/s]
+(EngineCore pid=671) INFO 11-14 11:16:41 [cuda.py:567] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+(EngineCore pid=671) INFO 11-14 11:16:41 [mm_encoder_attention.py:372] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+(EngineCore pid=671) INFO 11-14 11:16:41 [cuda.py:508] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=671) INFO 11-14 11:16:41 [flash_attn.py:1122] Using FlashAttention version 3
+(EngineCore pid=671) INFO 11-14 11:16:41 [base_loader.py:82] Initializing model took 1.400002 seconds
+(EngineCore pid=671) INFO 11-14 11:16:42 [weight_utils.py:1144] Filesystem type for checkpoints: EXT4. Checkpoint size: 3.96 GiB. Available RAM: 24.66 GiB.
+(EngineCore pid=671) INFO 11-14 11:16:42 [weight_utils.py:1167] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.27it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.27it/s]
+
+(EngineCore pid=671) INFO 11-14 11:16:43 [default_loader.py:506] Loading weights took 1.02 seconds
+(EngineCore pid=671) INFO 11-14 11:16:43 [punica_selector.py:20] Using PunicaWrapperGPU.
+(EngineCore pid=671) WARNING 11-14 11:16:43 [model_manager.py:282] LoRA for the tower and connector of multimodal models is experimental and may contain bugs. Please report any related issues on GitHub if you encounter them.
+(EngineCore pid=671) INFO 11-14 11:16:48 [model_runner.py:428] Model loading took 4.09 GiB memory and 7.885077 seconds
+(EngineCore pid=671) INFO 11-14 11:16:48 [topk_topp_sampler.py:149] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=671) WARNING 11-14 11:16:48 [torch_utils.py:269] OMP_NUM_THREADS=4 is set; leaving Torch threads at 4 for serving. Multi-threaded torch CPU ops during serving can degrade performance through spin-wait contention and cgroup CPU-quota throttling.
+(EngineCore pid=671) INFO 11-14 11:16:48 [utils.py:381] Using LBNHC KV cache layout.
+(EngineCore pid=671) INFO 11-14 11:16:48 [encoder_runner.py:131] Encoder cache will be initialized with a budget of 512 tokens, and profiled with 1 image items of the maximum feature size.
+(EngineCore pid=671) WARNING 11-14 11:16:49 [utils.py:276] Using default LoRA kernel configs
+(EngineCore pid=671) INFO 11-14 11:16:50 [gpu_worker.py:772] Available KV cache memory: 12.41 GiB
+(EngineCore pid=671) INFO 11-14 11:16:50 [kv_cache_utils.py:1147] GPU KV cache size: 116,208 tokens, Maximum concurrency for 512 tokens per request: 226.97x
+(EngineCore pid=671) INFO 11-14 11:16:50 [qwen_vl_triton_warmup.py:57] Warmed position embedding and vision rotary kernels on grids=[(1, 16, 16), (1, 16, 2), (1, 2, 16), (1, 2, 2)].
+(EngineCore pid=671) INFO 11-14 11:16:50 [qwen_vl_triton_warmup.py:102] Warmed M-RoPE Triton kernels.
+(EngineCore pid=671) INFO 11-14 11:16:51 [kernel_warmup.py:485] Using FlashInfer managed autotune cache (root=flashinfer default). Pass --disable-flashinfer-autotune to skip autotuning.
+2026-11-14 11:16:51,027 - INFO - autotuner.py:1048 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-11-14 11:16:51,130 - INFO - autotune_cache.py:495 - flashinfer.jit: [Autotuner]: Managed autotune cache attached for this process: ManagedAutotuneCache(env_dir='/root/.cache/flashinfer/autotune/v2/7007cd1423ec6b12', hits=0, misses=0)
+(EngineCore pid=671) INFO 11-14 11:16:51 [kernel_warmup.py:371] Running FlashInfer autotune with 512 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512).
+2026-11-14 11:16:51,225 - INFO - autotuner.py:1071 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=671) INFO 11-14 11:16:51 [gpu_worker.py:1066] Free memory on device (19.33/19.62 GiB) on startup. Desired GPU memory utilization is (0.85, 16.68 GiB). Actual usage is 4.25 GiB for consumed memory (weights + non-torch), 0.02 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=13170463130` (12.27 GiB) to fit into requested memory, or `--kv-cache-memory=16011540480` (14.91 GiB) to fully utilize gpu memory. Current kv cache memory in use is 12.41 GiB.
+(EngineCore pid=671) INFO 11-14 11:16:51 [core.py:412] init engine (profile, create kv cache, warmup model) took 3.54 s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=671) WARNING 11-14 11:16:51 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(EngineCore pid=671) WARNING 11-14 11:16:51 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=671) INFO 11-14 11:16:51 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=671) INFO 11-14 11:16:51 [vllm.py:2005] Cudagraph is disabled under eager mode
+(EngineCore pid=671) INFO 11-14 11:16:51 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+(MainProcess pid=628) INFO 11-14 11:16:52 [hf.py:736] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+(MainProcess pid=628) WARNING 11-14 11:16:52 [input_processor.py:289] vLLM has deprecated support for supporting different tokenizers for different LoRAs. By default, vLLM uses base model's tokenizer. If you are using a LoRA with its own tokenizer, consider specifying `--tokenizer [lora_path]` to use the LoRA tokenizer.
+{
+  "stage": "on",
+  "enable_tower_connector_lora": true,
+  "cases": {
+    "base": {
+      "logprobs": [
+        -11.761186599731445,
+        -4.018153190612793,
+        -0.06675697863101959,
+        -0.031326137483119965,
+        -0.028843030333518982,
+        -0.28862330317497253,
+        -0.00014780859055463225,
+        -0.000537727726623416,
+        -0.04559338465332985,
+        -3.562680959701538,
+        -0.04928341135382652,
+        -0.006446637213230133
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    },
+    "vision_only": {
+      "logprobs": [
+        -11.76430892944336,
+        -4.387511253356934,
+        -0.0834297314286232,
+        -0.03392720967531204,
+        -0.018924865871667862,
+        -0.25092872977256775,
+        -0.00012396997772157192,
+        -0.00010334911348763853,
+        -0.028200138360261917,
+        -3.1820247173309326,
+        -0.038404908031225204,
+        -0.004838187713176012
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    },
+    "full": {
+      "logprobs": [
+        -11.393299102783203,
+        -4.387510776519775,
+        -0.0742247998714447,
+        -0.028608236461877823,
+        -0.017313532531261444,
+        -0.27108776569366455,
+        -9.285972191719338e-05,
+        -9.345571743324399e-05,
+        -0.019816750660538673,
+        -3.41374135017395,
+        -0.03837771713733673,
+        -0.003699365770444274
+      ],
+      "adapter_accepted": true,
+      "alignment_verified": true
+    }
+  },
+  "hf_bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+  "mm_device_do_normalize": false,
+  "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "processed_images": [
+    {
+      "original_pixel_values_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "original_difference_from_hf": {
+        "max_abs": 2.0,
+        "mean_abs": 0.9149577021598816,
+        "fraction_unequal": 0.4574788510799408
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "9e08307e893e617086b9aa474a2845b0b15f978c996a26a951b13c74a2602e52",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "original_pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "original_difference_from_hf": {
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "fraction_unequal": 0.0
+      },
+      "pixel_values_shape": [
+        64,
+        1536
+      ],
+      "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "pixel_values_dtype": "torch.bfloat16",
+      "bf16_pixels_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+      "image_grid_thw": [
+        [
+          1,
+          8,
+          8
+        ]
+      ]
+    }
+  ],
+  "returned_prompt_ids": [
+    151644,
+    872,
+    198,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    74785,
+    279,
+    27197,
+    20816,
+    304,
+    419,
+    2168,
+    26753,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198,
+    3862,
+    374,
+    264,
+    2518,
+    22756,
+    323,
+    264,
+    6303,
+    12671,
+    389,
+    264,
+    4158
+  ]
+}
+(MainProcess pid=628) INFO 11-14 11:16:53 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=671) INFO 11-14 11:16:53 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=671) INFO 11-14 11:16:53 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=671) INFO 11-14 11:16:53 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=671) INFO 11-14 11:16:53 [core.py:1573] [shutdown] EngineCore: exiting busy loop

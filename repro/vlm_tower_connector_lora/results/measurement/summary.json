@@ -1,0 +1,102 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "complete": true,
+  "comparisons": [
+    {
+      "flag": "off",
+      "case": "base",
+      "max_abs_logprob_diff": 0.2524290084838867,
+      "mean_abs_logprob_diff": 0.04538460289768409,
+      "tokens": 12
+    },
+    {
+      "flag": "off",
+      "case": "vision_only",
+      "max_abs_logprob_diff": 0.3693580627441406,
+      "mean_abs_logprob_diff": 0.060011757303072955,
+      "tokens": 12
+    },
+    {
+      "flag": "off",
+      "case": "full",
+      "max_abs_logprob_diff": 0.7378010749816895,
+      "mean_abs_logprob_diff": 0.08932503952261565,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "base",
+      "max_abs_logprob_diff": 0.2524290084838867,
+      "mean_abs_logprob_diff": 0.04538460289768409,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "vision_only",
+      "max_abs_logprob_diff": 0.11295199394226074,
+      "mean_abs_logprob_diff": 0.011301102607224797,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "full",
+      "max_abs_logprob_diff": 0.2499065399169922,
+      "mean_abs_logprob_diff": 0.03786243575389866,
+      "tokens": 12
+    }
+  ],
+  "direct_visual_effects": [
+    {
+      "flag": "off",
+      "vllm_vision_only_minus_base": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_visual_effect": 0.0,
+      "max_abs_effect_difference_from_hf": 0.6142616271972656
+    },
+    {
+      "flag": "on",
+      "vllm_vision_only_minus_base": [
+        -0.0031223297119140625,
+        -0.3693580627441406,
+        -0.016672752797603607,
+        -0.0026010721921920776,
+        0.00991816446185112,
+        0.037694573402404785,
+        2.3838612833060324e-05,
+        0.0004343786131357774,
+        0.017393246293067932,
+        0.38065624237060547,
+        0.010878503322601318,
+        0.001608449500054121
+      ],
+      "max_abs_visual_effect": 0.38065624237060547,
+      "max_abs_effect_difference_from_hf": 0.2524299621582031
+    }
+  ],
+  "flag_effects": [
+    {
+      "case": "base",
+      "max_abs_off_vs_on": 0.0
+    },
+    {
+      "case": "vision_only",
+      "max_abs_off_vs_on": 0.38065624237060547
+    },
+    {
+      "case": "full",
+      "max_abs_off_vs_on": 0.6142630577087402
+    }
+  ]
+}

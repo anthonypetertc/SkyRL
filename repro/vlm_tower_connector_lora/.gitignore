@@ -1,0 +1,5 @@
+__pycache__/
+results/**/adapter_model.safetensors
+results/**/adapter_model.bin
+results/**/README.md
+results/gpu.log

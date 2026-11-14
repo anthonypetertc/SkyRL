@@ -1,0 +1,21 @@
+{
+  "date_utc": "2026-11-14",
+  "skyrl_base_commit": "0cd3ad969e4be707e5cc96f5360b3458e32d7947",
+  "fork": "anthonypetertc/SkyRL",
+  "branch": "investigate/vlm-tower-lora-sync",
+  "cpu": "cpu_check.py executed with CUDA_VISIBLE_DEVICES empty; results/cpu.json",
+  "megatron": "backend_scope.py executes pinned matcher/name resolver and verifies dense provider freeze defaults; no Megatron runtime",
+  "gpu": "measure_logprobs.py policy/off/on, pretrained Qwen3-VL-2B, H100 MIG 2g.20gb",
+  "policy_revision": "main resolved in original run; public HF model last modified 2025-10-23",
+  "rollout_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "input_validation": "Exact expanded IDs, image grids, and BF16-normalized pixels; mm_device_do_normalize=False; no substituted pixels",
+  "adapter_construction": "Seed 7819, rank/alpha8, dropout0; visual factors std0.02, language factors std0.01; no optimizer step",
+  "transport": "Actual FSDP adapter export method on unsharded policy; mocked rank/barrier and remote client; actual exported artifact loaded by vLLM",
+  "harness_corrections": [
+    "Extend HF modality IDs for fixed continuation",
+    "Supply unexpanded image placeholders to vLLM",
+    "Compare normalized pixels at the same stage; vLLM default GPU normalization otherwise retains uint8 CPU pixels"
+  ],
+  "runtime_observation": "vLLM warns visual modules will be ignored when flag=False, accepts adapter, and ignores visual update in measured control",
+  "issues_or_pull_requests_created": false
+}

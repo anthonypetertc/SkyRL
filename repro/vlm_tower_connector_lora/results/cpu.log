@@ -1,0 +1,151 @@
+W1114 10:59:11.474000 432 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1114 10:59:11.475000 432 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1114 10:59:11.475000 432 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1114 10:59:12.757000 432 torch/utils/cpp_extension.py:183] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+2026-11-14 10:59:16.138 | DEBUG    | skyrl.backends.skyrl_train.patches.vllm.patch_lora_in_memory:apply_lora_in_memory_patch:316 - in-memory LoRA patch installed on vllm WorkerLoRAManager._load_adapter and on add_adapter of WorkerLoRAManager and LRUCacheWorkerLoRAManager
+2026-11-14 10:59:16.289 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_compile_cache_device_path:_apply_compile_cache_device_path_patch:116 - Patched vLLM AOT compile cache to use a per-device artifact directory
+2026-11-14 10:59:16.664 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_per_block_fp8_param:apply_per_block_fp8_param_patch:45 - Installed per_block_cast_to_fp8 plain-tensor patch
+2026-11-14 10:59:16.724 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_routed_experts_pp_relay:apply_pp_relay_worker_patch:285 - Installed the R3 pipeline-parallel relay patch
+2026-11-14 10:59:16.790 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_deepseek_v4_reload:apply_deepseek_v4_reload_patch:69 - Installed DeepSeek-V4/V4.1 weight-sync reload patch (vllm#64357 finalize)
+2026-11-14 10:59:16.820 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_pp_kv_cache_projection:apply_pp_kv_cache_projection_patch:52 - Patched vLLM allocate_kv_cache to skip KV cache tensors of layers on other PP stages
+{
+  "versions": {
+    "torch": "2.14.0+cu130",
+    "peft": "0.21.0",
+    "transformers": "5.16.1",
+    "vllm": "0.33.0"
+  },
+  "cuda_available": false,
+  "visual_adapter_tensor_count": 28,
+  "full_adapter_tensor_count": 56,
+  "text_only_visual_tensor_count": 0,
+  "visual_adapter_keys": [
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.attn.proj.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.attn.proj.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.attn.qkv.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.attn.qkv.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.merger.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.merger.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.merger.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.merger.linear_fc2.lora_B.weight"
+  ],
+  "cases": [
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": false,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": false,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": false,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": false,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    }
+  ],
+  "scope": "Actual SkyRL CLI builder and HF/PEFT target selection; no vLLM forward or Megatron model execution."
+}

@@ -1,0 +1,141 @@
+{
+  "versions": {
+    "torch": "2.14.0+cu130",
+    "peft": "0.21.0",
+    "transformers": "5.16.1",
+    "vllm": "0.33.0"
+  },
+  "cuda_available": false,
+  "visual_adapter_tensor_count": 28,
+  "full_adapter_tensor_count": 56,
+  "text_only_visual_tensor_count": 0,
+  "visual_adapter_keys": [
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.attn.proj.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.attn.proj.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.attn.qkv.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.attn.qkv.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.blocks.1.mlp.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.0.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.deepstack_merger_list.1.linear_fc2.lora_B.weight",
+    "base_model.model.model.visual.merger.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.merger.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.merger.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.merger.linear_fc2.lora_B.weight"
+  ],
+  "cases": [
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "fsdp",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": false,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": false,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": false,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": true,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": false,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": false,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": false,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": true,
+      "override": null,
+      "enable_lora": true,
+      "enable_tower_connector_lora": false
+    },
+    {
+      "strategy": "megatron",
+      "merge_lora": false,
+      "language_model_only": true,
+      "override": true,
+      "enable_lora": true,
+      "enable_tower_connector_lora": true
+    }
+  ],
+  "scope": "Actual SkyRL CLI builder and HF/PEFT target selection; no vLLM forward or Megatron model execution."
+}

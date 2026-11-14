@@ -1,0 +1,110 @@
+{
+  "bridge_revision": "7171584bd7452caf2adfa6afd12fb89cc37fbc64",
+  "default_megatron_lora_targets": [
+    "linear_qkv",
+    "linear_proj",
+    "linear_fc1",
+    "linear_fc2",
+    "in_proj",
+    "out_proj"
+  ],
+  "dense_qwen3_vl_vision_freeze_defaults": {
+    "freeze_vision_model": false,
+    "freeze_vision_projection": false
+  },
+  "qwen3_vl_visual_matches_and_export_names": [
+    {
+      "megatron_module": "vision_model.decoder.deepstack_merger_list.0.linear_fc1",
+      "hf_adapter_keys": [
+        "model.visual.deepstack_merger_list.0.linear_fc1.lora_A.weight",
+        "model.visual.deepstack_merger_list.0.linear_fc1.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.decoder.deepstack_merger_list.0.linear_fc2",
+      "hf_adapter_keys": [
+        "model.visual.deepstack_merger_list.0.linear_fc2.lora_A.weight",
+        "model.visual.deepstack_merger_list.0.linear_fc2.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.decoder.layers.0.mlp.linear_fc1",
+      "hf_adapter_keys": [
+        "model.visual.blocks.0.mlp.linear_fc1.lora_A.weight",
+        "model.visual.blocks.0.mlp.linear_fc1.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.decoder.layers.0.mlp.linear_fc2",
+      "hf_adapter_keys": [
+        "model.visual.blocks.0.mlp.linear_fc2.lora_A.weight",
+        "model.visual.blocks.0.mlp.linear_fc2.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.decoder.layers.0.self_attention.linear_proj",
+      "hf_adapter_keys": [
+        "model.visual.blocks.0.attn.proj.lora_A.weight",
+        "model.visual.blocks.0.attn.proj.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.decoder.layers.0.self_attention.linear_qkv",
+      "hf_adapter_keys": [
+        "model.visual.blocks.0.attn.qkv.lora_A.weight",
+        "model.visual.blocks.0.attn.qkv.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.merger.linear_fc1",
+      "hf_adapter_keys": [
+        "model.visual.merger.linear_fc1.lora_A.weight",
+        "model.visual.merger.linear_fc1.lora_B.weight"
+      ]
+    },
+    {
+      "megatron_module": "vision_model.merger.linear_fc2",
+      "hf_adapter_keys": [
+        "model.visual.merger.linear_fc2.lora_A.weight",
+        "model.visual.merger.linear_fc2.lora_B.weight"
+      ]
+    }
+  ],
+  "qwen25_vl_representative_visual_names": [
+    "visual.blocks.0.attn.qkv",
+    "visual.blocks.0.attn.proj",
+    "visual.blocks.0.mlp.gate_proj",
+    "visual.blocks.0.mlp.up_proj",
+    "visual.blocks.0.mlp.down_proj",
+    "visual.merger.mlp.0",
+    "visual.merger.mlp.2"
+  ],
+  "qwen25_vl_default_visual_matches": [],
+  "provenance": {
+    "peft/utils.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/peft/utils.py",
+      "sha256": "79ddb5fecad6e8da8a19bda117ac638bf94cebed1602494fc1b78ea329e5fb6a"
+    },
+    "peft/module_matcher.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/peft/module_matcher.py",
+      "sha256": "57fe5dc9516c0c5aad0d20e9b6e22058e92dc47577732d313dcb2b4dcaac4e00"
+    },
+    "models/conversion/peft_bridge.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/models/conversion/peft_bridge.py",
+      "sha256": "984dcf877f4a2dddc8b70bdc1ff0b79ae6480e87da68143d6e1a32a86070f8da"
+    },
+    "models/qwen_vl/qwen3_vl_bridge.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/models/qwen_vl/qwen3_vl_bridge.py",
+      "sha256": "407421777925fa34b4092588875b3a927c78ab3b7021743fe826818a8e92f03b"
+    },
+    "models/qwen_vl/qwen3_vl_provider.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/models/qwen_vl/qwen3_vl_provider.py",
+      "sha256": "4d607a2ce037a6cf7c0df1ea1dd1f1f5d42532cae7dd1561d3a2708c643c6030"
+    },
+    "models/qwen_vl/modeling_qwen25_vl.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/Megatron-Bridge/7171584bd7452caf2adfa6afd12fb89cc37fbc64/src/megatron/bridge/models/qwen_vl/modeling_qwen25_vl.py",
+      "sha256": "57513dd5eae0f30d0b6ff260ba36ddf742d48cbad385b60491d015472b4d4446"
+    }
+  },
+  "scope": "Verbatim target matcher and adapter name resolver on pinned bridge mappings; no model, tensors, collectives, or adapter transport."
+}

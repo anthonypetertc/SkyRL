@@ -1,45 +1,17 @@
 #!/usr/bin/env python3
-"""Minimal repro: VLM + LoRA trains the vision tower, but SkyRL builds the vLLM
-engine without tower/connector LoRA, so the rollout engine silently runs the
-frozen base vision encoder.
+"""Original lightweight configuration probe for VLM tower/connector LoRA.
 
-Claim under test
-----------------
-For a *full* VLM policy (``language_model_only=False``) with FSDP + LoRA, SkyRL
-applies LoRA to every linear layer -- including the vision tower and connector
-(``target_modules="all-linear"``) -- and exports those ``visual.*`` weights in
-the PEFT adapter it hot-loads into vLLM. But the vLLM engine args SkyRL builds
-never set ``enable_tower_connector_lora``, which vLLM defaults to ``False``.
-vLLM's LoRA manager (``vllm/lora/model_manager.py::_maybe_init_mm``) then sets
-``supports_tower_connector_lora = False`` and returns before building the tower
-punica wrapper, so the ``visual.*`` adapter weights are dropped at
-``load_lora_adapter``. The policy and the rollout engine therefore disagree
-about the vision tower on every step: rollout logprobs, KL and rewards are all
-computed against a different model than the one being optimized.
+This checks SkyRL engine arguments and PEFT keys on a stand-in VLM. It does
+not run a vLLM forward and cannot establish whether an adapter is ignored,
+rejected, or warned about. See cpu_check.py for a real tiny HF VLM CPU check,
+backend_scope.py for pinned Megatron source checks, and measure_logprobs.py
+for the GPU policy/rollout comparison. See README.md for measured findings.
 
-The trainer's LoRA export naming is covered by
-``tests/backends/skyrl_train/workers/test_lora_export_names.py``; this script
-focuses on the engine args that drop the tower/connector weights.
+Run from the repository root:
+    CUDA_VISIBLE_DEVICES='' uv run --isolated --extra fsdp python \
+        repro/vlm_tower_connector_lora/repro.py --expect buggy
 
-What this checks (all on a GPU-less Linux host; no model download)
-------------------------------------------------------------------
-  A. trainer export : a LoRA applied to a stand-in VLM produces ``visual.*``
-                      tower/connector keys; a ``language_model_only`` VLM does not.
-  B. engine args    : ``build_vllm_cli_args`` leaves ``enable_tower_connector_lora``
-                      unset (vLLM default ``False``) for a full VLM + LoRA config,
-                      even though ``enable_lora=True``.
-  C. workaround     : setting ``engine_init_kwargs.enable_tower_connector_lora``
-                      flips it on.
-
-Run (needs SkyRL's deps: torch, peft, vllm; no GPU required):
-
-    uv run --isolated --extra fsdp python repro/vlm_tower_connector_lora/repro.py
-
-    # or, if SkyRL + vLLM are already importable:
-    python repro/vlm_tower_connector_lora/repro.py --expect buggy
-
-Exit: 0 if the observed results match ``--expect``, 1 otherwise, 2 if a
-precondition fails.
+Here --expect buggy/fixed means only that the tower flag is absent/present.
 """
 
 from __future__ import annotations
@@ -157,8 +129,8 @@ def main() -> int:
     args = parse_args()
 
     try:
-        import torch  # noqa: F401
         import peft  # noqa: F401
+        import torch  # noqa: F401
         import vllm  # noqa: F401
     except ImportError as error:
         print(f"ERROR: missing dependency: {error}", file=sys.stderr)
@@ -177,9 +149,7 @@ def main() -> int:
 
     full_args = build_engine_args(args.model, args.lora_rank, language_model_only=False)
     lmo_args = build_engine_args(args.model, args.lora_rank, language_model_only=True)
-    fixed_args = build_engine_args(
-        args.model, args.lora_rank, language_model_only=False, tower_lora=True
-    )
+    fixed_args = build_engine_args(args.model, args.lora_rank, language_model_only=False, tower_lora=True)
 
     try:
         full_keys = tower_lora_keys(language_model_only=False)
@@ -200,10 +170,7 @@ def main() -> int:
 
     print()
     print(f"{'case':<56}{'enable_lora':>12}{'tower_lora':>12}")
-    print(
-        f"{'full VLM + LoRA (the bug)':<56}"
-        f"{str(full_args.enable_lora):>12}{str(tower_flag(full_args)):>12}"
-    )
+    print(f"{'full VLM + LoRA (default)':<56}" f"{str(full_args.enable_lora):>12}{str(tower_flag(full_args)):>12}")
     print(
         f"{'language_model_only VLM + LoRA (control)':<56}"
         f"{str(lmo_args.enable_lora):>12}{str(tower_flag(lmo_args)):>12}"
@@ -224,9 +191,9 @@ def main() -> int:
         if not full_args.enable_lora:
             failures.append("SkyRL did not enable LoRA on the engine, so the repro is not in the LoRA path")
         if tower_flag(full_args):
-            failures.append("SkyRL already enables tower/connector LoRA; the bug appears fixed")
+            failures.append("SkyRL enables tower/connector LoRA; expected the flag to be absent")
         if vllm_default:
-            failures.append("vLLM now defaults enable_tower_connector_lora to True; the gap no longer drops weights")
+            failures.append("vLLM now defaults enable_tower_connector_lora to True; expected False")
     elif args.expect == "fixed":
         if not tower_flag(full_args):
             failures.append("SkyRL still does not enable tower/connector LoRA for a full VLM + LoRA")
@@ -240,9 +207,8 @@ def main() -> int:
         return 1
 
     if args.expect == "buggy":
-        print("OK: full VLM + LoRA trains visual.* weights but the engine drops them.")
-        print("    vLLM's _maybe_init_mm sets supports_tower_connector_lora=False when")
-        print("    enable_tower_connector_lora is unset, so load_lora_adapter skips them.")
+        print("OK: the full-VLM stand-in has visual adapter keys, but the engine tower flag is False.")
+        print("    This configuration probe does not execute vLLM or verify loader behavior.")
     elif args.expect == "fixed":
         print("OK: full VLM + LoRA enables tower/connector LoRA on the engine.")
     else:

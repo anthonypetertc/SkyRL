@@ -1,0 +1,20 @@
+{
+  "export_method": "FSDPPolicyWorkerBase._save_lora_adapters_and_sync",
+  "scope": "Actual export method on unsharded HF/PEFT policy; rank/barrier and RemoteInferenceClient mocked.",
+  "adapter_tensor_count": 600,
+  "visual_adapter_tensor_count": 208,
+  "visual_adapter_key_examples": [
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.proj.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.attn.qkv.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc1.lora_B.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_A.weight",
+    "base_model.model.model.visual.blocks.0.mlp.linear_fc2.lora_B.weight"
+  ],
+  "adapter_file_sha256": "09aada7e9ed9f518a575d0d2a30c07ae97b89325a62d73e14222171f633da02f",
+  "adapter_tensor_dtypes": {
+    "F32": 600
+  }
+}
