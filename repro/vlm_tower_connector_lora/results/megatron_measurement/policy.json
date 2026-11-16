@@ -1,0 +1,244 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "checkpoint_snapshot": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "reference_backend": "megatron",
+  "loaded_nvrtc_libraries": [
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpUN86x5/lib/python3.12/site-packages/cuda/bindings/_internal/nvrtc.cpython-312-x86_64-linux-gnu.so",
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpUN86x5/lib/python3.12/site-packages/cuda/bindings/cynvrtc.cpython-312-x86_64-linux-gnu.so",
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpUN86x5/lib/python3.12/site-packages/cuda/bindings/nvrtc.cpython-312-x86_64-linux-gnu.so",
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpUN86x5/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc-builtins.so.13.0",
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpUN86x5/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc.so.13",
+    "/usr/local/cuda-12.6/targets/x86_64-linux/lib/libnvrtc.so.12.6.85"
+  ],
+  "policy_class": "skyrl.backends.skyrl_train.workers.megatron.megatron_worker.MegatronPolicyWorkerBase",
+  "provider_class": "megatron.bridge.models.qwen_vl.qwen3_vl_provider.Qwen3VLModelProvider",
+  "versions": {
+    "torch": {
+      "version": "2.14.0+cu130",
+      "direct_url": null
+    },
+    "transformers": {
+      "version": "5.16.1",
+      "direct_url": null
+    },
+    "peft": {
+      "version": "0.21.0",
+      "direct_url": null
+    },
+    "vllm": {
+      "version": "0.33.0",
+      "direct_url": null
+    },
+    "megatron-core": {
+      "version": "0.21.0+ed9c2c8c1",
+      "direct_url": {
+        "url": "https://github.com/NVIDIA/Megatron-LM",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe",
+          "requested_revision": "ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe"
+        }
+      }
+    },
+    "megatron-bridge": {
+      "version": "0.8.0+7171584b",
+      "direct_url": {
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge",
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "7171584bd7452caf2adfa6afd12fb89cc37fbc64",
+          "requested_revision": "7171584bd7452caf2adfa6afd12fb89cc37fbc64"
+        }
+      }
+    },
+    "transformer-engine": {
+      "version": "2.19.0",
+      "direct_url": null
+    }
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "parallelism": {
+    "tp": 1,
+    "pp": 1,
+    "cp": 1
+  },
+  "merge_lora": false,
+  "optimizer_constructed": false,
+  "transport": "publication sink; direct disk load",
+  "prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Describe the colored shapes in this image briefly.<|im_end|>\n<|im_start|>assistant\n",
+  "prompt_ids": [
+    151644,
+    872,
+    198,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    74785,
+    279,
+    27197,
+    20816,
+    304,
+    419,
+    2168,
+    26753,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "answer_ids": [
+    3862,
+    374,
+    264,
+    2518,
+    22756,
+    323,
+    264,
+    6303,
+    12671,
+    389,
+    264,
+    4158
+  ],
+  "full_ids": [
+    151644,
+    872,
+    198,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    74785,
+    279,
+    27197,
+    20816,
+    304,
+    419,
+    2168,
+    26753,
+    13,
+    151645,
+    198,
+    151644,
+    77091,
+    198,
+    3862,
+    374,
+    264,
+    2518,
+    22756,
+    323,
+    264,
+    6303,
+    12671,
+    389,
+    264,
+    4158
+  ],
+  "continuation": "There is a red rectangle and a blue circle on a white",
+  "pixel_values_sha256": "190094e88fa98ee71f8fcef26f72713f2bdd284c85160aff66709a58c52613a2",
+  "image_grid_thw": [
+    [
+      1,
+      8,
+      8
+    ]
+  ],
+  "image_sha256": "49d06825558e60d958f09beaa337b3d7421976066c644d2b0dcec9b592ed03a7",
+  "megatron_base": [
+    -11.636189460754395,
+    -3.7732489109039307,
+    -0.06581058353185654,
+    -0.028820214793086052,
+    -0.030947234481573105,
+    -0.2846806049346924,
+    -0.00020752183627337217,
+    -0.0005946775199845433,
+    -0.05130850523710251,
+    -3.4538800716400146,
+    -0.04915381222963333,
+    -0.0051218015141785145
+  ],
+  "megatron_vision_only": [
+    -11.38372802734375,
+    -4.018153667449951,
+    -0.07571102678775787,
+    -0.03574071079492569,
+    -0.021010801196098328,
+    -0.3904649615287781,
+    -9.333651541965082e-05,
+    -0.0002531684876885265,
+    -0.06523928046226501,
+    -3.542530059814453,
+    -0.04934525117278099,
+    -0.0037144492380321026
+  ],
+  "megatron_full": [
+    -11.25876235961914,
+    -4.018154144287109,
+    -0.07578562945127487,
+    -0.035015448927879333,
+    -0.024955397471785545,
+    -0.32591211795806885,
+    -0.00014435203047469258,
+    -0.00044824567157775164,
+    -0.07381463795900345,
+    -3.563140869140625,
+    -0.06284936517477036,
+    -0.003680124878883362
+  ],
+  "visual_effect_max_abs": 0.25246143341064453,
+  "visual_adapter_parameter_count": 208,
+  "adapter_parameter_count": 432,
+  "seed": 7819,
+  "visual_factor_std": 0.02,
+  "language_factor_std": 0.01,
+  "lora_rank": 8,
+  "lora_alpha": 8,
+  "adapter_directories": [
+    [
+      "base",
+      null
+    ],
+    [
+      "vision_only",
+      "skyrl_megatron_vision_only"
+    ],
+    [
+      "full",
+      "skyrl_megatron_full"
+    ]
+  ]
+}

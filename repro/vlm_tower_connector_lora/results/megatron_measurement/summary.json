@@ -1,0 +1,102 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "complete": true,
+  "comparisons": [
+    {
+      "flag": "off",
+      "case": "base",
+      "max_abs_logprob_diff": 0.1249990463256836,
+      "mean_abs_logprob_diff": 0.03355575437914619,
+      "tokens": 12
+    },
+    {
+      "flag": "off",
+      "case": "vision_only",
+      "max_abs_logprob_diff": 0.3774604797363281,
+      "mean_abs_logprob_diff": 0.07462808506352303,
+      "tokens": 12
+    },
+    {
+      "flag": "off",
+      "case": "full",
+      "max_abs_logprob_diff": 0.25243091583251953,
+      "mean_abs_logprob_diff": 0.03835318806765523,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "base",
+      "max_abs_logprob_diff": 0.1249990463256836,
+      "mean_abs_logprob_diff": 0.03355575437914619,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "vision_only",
+      "max_abs_logprob_diff": 0.37497520446777344,
+      "mean_abs_logprob_diff": 0.075887813938607,
+      "tokens": 12
+    },
+    {
+      "flag": "on",
+      "case": "full",
+      "max_abs_logprob_diff": 0.6230640411376953,
+      "mean_abs_logprob_diff": 0.09814023819126305,
+      "tokens": 12
+    }
+  ],
+  "direct_visual_effects": [
+    {
+      "flag": "off",
+      "vllm_vision_only_minus_base": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_visual_effect": 0.0,
+      "max_abs_effect_difference_from_megatron": 0.25246143341064453
+    },
+    {
+      "flag": "on",
+      "vllm_vision_only_minus_base": [
+        0.0024852752685546875,
+        -0.4897341728210449,
+        -0.003725700080394745,
+        -0.019051436334848404,
+        0.01034606248140335,
+        -0.11293771862983704,
+        4.3863496102858335e-05,
+        0.00013286431203596294,
+        -0.03141891211271286,
+        0.35785698890686035,
+        -0.013790473341941833,
+        7.37728551030159e-05
+      ],
+      "max_abs_visual_effect": 0.4897341728210449,
+      "max_abs_effect_difference_from_megatron": 0.44650697708129883
+    }
+  ],
+  "flag_effects": [
+    {
+      "case": "base",
+      "max_abs_off_vs_on": 0.0
+    },
+    {
+      "case": "vision_only",
+      "max_abs_off_vs_on": 0.4897341728210449
+    },
+    {
+      "case": "full",
+      "max_abs_off_vs_on": 0.3706331253051758
+    }
+  ]
+}

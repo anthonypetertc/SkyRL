@@ -1,0 +1,506 @@
+W1116 09:56:10.477000 787 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 09:56:10.478000 787 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 09:56:10.478000 787 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 09:56:10.487000 787 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 09:56:10.487000 787 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 09:56:10.487000 787 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 09:56:10.494000 787 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 09:56:10.494000 787 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 09:56:10.494000 787 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 09:56:10.498000 787 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 09:56:10.498000 787 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 09:56:10.498000 787 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+W1116 09:56:44.076000 787 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1116 09:56:44.077000 787 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 09:56:44.078000 787 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/modelopt/torch/__init__.py:55: UserWarning: transformers 5.16.1 is not tested with current version of modelopt and may cause issues. Please install recommended version with `pip install -U nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/models/mimo/config/base_configs.py:12: UserWarning: MimoModelConfig is experimental and still under active development. The API may change without notice in future releases.
+  class MimoModelConfig:
+2026-11-16 09:56:53.840 | INFO     | skyrl.backends.skyrl_train.patches.megatron.patch_dist_ckpt_exchange_wait:apply_dist_ckpt_exchange_wait_patch:96 - dist_checkpointing: fully-parallel load waits on its async exchange broadcasts
+2026-11-16 09:56:53.840 | INFO     | skyrl.backends.skyrl_train.patches.megatron.patch_dist_optim_te_load_state_dict:apply_dist_optim_te_load_state_dict_patch:56 - DistributedOptimizer.load_state_dict: TE FusedAdam state is not copied during checkpoint load
+2026-11-16 09:56:53.913 | INFO     | skyrl.backends.skyrl_train.patches.megatron.patch_triton_kernels_int64_offsets:_apply_one:149 - megatron.core.fusions.fused_mhc_kernels: int64 row offsets in _triton_h_agg_fwd_kernel, _triton_hpb_fwd_kernel, _triton_hpb_bwd_g_x_orig_kernel, _triton_hpb_bwd_g_hp_hr_kernel
+2026-11-16 09:56:53.929 | INFO     | skyrl.backends.skyrl_train.patches.megatron.patch_triton_kernels_int64_offsets:_apply_one:149 - megatron.core.fusions.fused_mla_yarn_rope_apply: int64 row offsets in _mla_rope_fwd_inplace_kernel, _mla_rope_bwd_inplace_kernel, _mla_rope_fwd_kv_split_kernel, _mla_rope_bwd_kv_split_kernel
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-VL-2B-Instruct/tree/89644892e4d85e24eaac8bacfd4f463576704203?recursive=true&expand=false "HTTP/1.1 200 OK"
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/generation_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fgeneration_config.json=&etag=%227bb37933d2d86e4ceaabcc6540be989658f238e9%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/chat_template.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/merges.txt "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/model.safetensors "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/.gitattributes "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/README.md?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2FREADME.md=&etag=%2213afcb1d2c695b57ebe4ee740db48671069566ce%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/chat_template.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fchat_template.json=&etag=%22e49e75bdda104c8de941eb20e0b3765184fb27bc%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/preprocessor_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fpreprocessor_config.json=&etag=%222ea84a437d448ff71b08df68fdd949d5cc4ebb64%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/merges.txt?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fmerges.txt=&etag=%2220024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/.gitattributes?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2F.gitattributes=&etag=%22a6344aac8c09253b3b630fb776ae94478aa0275b%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fconfig.json=&etag=%220cd8c646eb55794594b14fefcd1d3acea5cc000f%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fconfig.json=&etag=%220cd8c646eb55794594b14fefcd1d3acea5cc000f%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/generation_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fgeneration_config.json=&etag=%227bb37933d2d86e4ceaabcc6540be989658f238e9%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/.gitattributes?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2F.gitattributes=&etag=%22a6344aac8c09253b3b630fb776ae94478aa0275b%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/chat_template.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fchat_template.json=&etag=%22e49e75bdda104c8de941eb20e0b3765184fb27bc%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/merges.txt?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fmerges.txt=&etag=%2220024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/preprocessor_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fpreprocessor_config.json=&etag=%222ea84a437d448ff71b08df68fdd949d5cc4ebb64%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/README.md?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2FREADME.md=&etag=%2213afcb1d2c695b57ebe4ee740db48671069566ce%22 "HTTP/1.1 200 OK"
+Fetching 12 files:   8%|▊         | 1/12 [00:00<00:03,  3.11it/s]INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-VL-2B-Instruct/xet-read-token/89644892e4d85e24eaac8bacfd4f463576704203 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Ftokenizer.json=&etag=%22c6cc1014128b19d1fc46b1d30a23e3b1d35db421%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Ftokenizer_config.json=&etag=%22d3d3763207692c78780f4bf42d4dadf49a5c8012%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/video_preprocessor_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fvideo_preprocessor_config.json=&etag=%223ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/vocab.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Ftokenizer.json=&etag=%22c6cc1014128b19d1fc46b1d30a23e3b1d35db421%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/vocab.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fvocab.json=&etag=%224783fe10ac3adce15ac8f358ef5462739852c569%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/tokenizer_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Ftokenizer_config.json=&etag=%22d3d3763207692c78780f4bf42d4dadf49a5c8012%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/video_preprocessor_config.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fvideo_preprocessor_config.json=&etag=%223ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-VL-2B-Instruct/89644892e4d85e24eaac8bacfd4f463576704203/vocab.json?%2FQwen%2FQwen3-VL-2B-Instruct%2Fresolve%2F89644892e4d85e24eaac8bacfd4f463576704203%2Fvocab.json=&etag=%224783fe10ac3adce15ac8f358ef5462739852c569%22 "HTTP/1.1 200 OK"
+Fetching 12 files:  67%|██████▋   | 8/12 [00:00<00:00, 17.02it/s]Fetching 12 files: 100%|██████████| 12/12 [00:13<00:00,  1.41s/it]Fetching 12 files: 100%|██████████| 12/12 [00:13<00:00,  1.13s/it]
+2026-11-16 09:57:10.577 | DEBUG    | skyrl.backends.skyrl_train.patches.vllm.patch_lora_in_memory:apply_lora_in_memory_patch:316 - in-memory LoRA patch installed on vllm WorkerLoRAManager._load_adapter and on add_adapter of WorkerLoRAManager and LRUCacheWorkerLoRAManager
+2026-11-16 09:57:10,607 - INFO -
+skyrl.backends.skyrl_train.inference_servers.vllm_compat: Patched vLLM KV-cache
+methods to normalize FP8 scales at boot (pre-capture)
+2026-11-16 09:57:10,716 - INFO -
+skyrl.backends.skyrl_train.inference_servers.vllm_compat: Patched vLLM worker
+wake-up FP8 KV scale reset (q/prob scales + float mirrors)
+2026-11-16 09:57:10,717 - INFO -
+skyrl.backends.skyrl_train.inference_servers.vllm_compat: Patched vLLM worker
+sleep/wake to preserve model_runner.model_state tensors lost on sleep
+2026-11-16 09:57:10,748 - DEBUG -
+skyrl.backends.skyrl_train.weight_sync.register: Registered receive-side weight
+transfer engines.
+2026-11-16 09:57:10.758 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_compile_cache_device_path:_apply_compile_cache_device_path_patch:116 - Patched vLLM AOT compile cache to use a per-device artifact directory
+2026-11-16 09:57:11,008 - INFO -
+skyrl.backends.skyrl_train.patches.vllm.patch_glm5next_lora_packing: Patched
+vLLM for GLM-5.3-Flash LoRA (vllm#56327): packed_modules_mapping on
+['Glm5NextForConditionalGeneration', 'Glm5NextForCausalLM'],
+replicated_shard_ids honored in merged LoRA-B loading, non-contiguous LoRA
+shrink inputs accepted, kv_b_proj adapter applied to the absorbed MLA
+projections and to MHA prefill (vllm#56718)
+2026-11-16 09:57:11.622 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_per_block_fp8_param:apply_per_block_fp8_param_patch:45 - Installed per_block_cast_to_fp8 plain-tensor patch
+2026-11-16 09:57:11.632 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_routed_experts_pp_relay:apply_pp_relay_worker_patch:285 - Installed the R3 pipeline-parallel relay patch
+2026-11-16 09:57:11.744 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_deepseek_v4_reload:apply_deepseek_v4_reload_patch:69 - Installed DeepSeek-V4/V4.1 weight-sync reload patch (vllm#64357 finalize)
+2026-11-16 09:57:11.753 | INFO     | skyrl.backends.skyrl_train.patches.vllm.patch_pp_kv_cache_projection:apply_pp_kv_cache_projection_patch:52 - Patched vLLM allocate_kv_cache to skip KV cache tensors of layers on other PP stages
+2026-11-16 09:57:11.783 | WARNING  | skyrl.train.utils.utils:validate_cfg:446 - MFU is not logged for LoRA runs: the FLOPs formula assumes full fine-tuning, which overstates LoRA's backward (the frozen base computes no weight gradients).
+[32m2026-11-16 09:57:12.516[0m | [33m[1mWARNING [0m | [36mmegatron.bridge.models.conversion.auto_bridge[0m:[36mfrom_hf_pretrained[0m:[36m680[0m - [33m[1mLoading a model with trust_remote_code=True allows arbitrary code execution from the model repository. Only use this with models you trust.[0m
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/transformer_config.py:3757: UserWarning: full scope is deprecated. Use empty cuda_graph_modules to capture the whole layer.
+  warnings.warn(
+[32m2026-11-16 09:57:12.574[0m | [1m[32mINFO    [0m | [36mskyrl.backends.skyrl_train.patches.megatron.patch_dsa_index_share[0m:[36mpatch_dsa_index_share[0m:[36m292[0m - [1m[32mApplied megatron-core DSA index-share patch (NVIDIA/Megatron-LM#6793 backport); rebound megatron.core.models.hybrid.hybrid_block, megatron.core.transformer.transformer_block[0m
+[32m2026-11-16 09:57:12.597[0m | [1m[32mINFO    [0m | [36mskyrl.backends.skyrl_train.patches.megatron.patch_moe_release_dispatcher_probs[0m:[36mpatch_moe_release_dispatcher_probs[0m:[36m44[0m - [1m[32mMoE: token dispatcher drops its router-probs reference after each MoE forward[0m
+[32m2026-11-16 09:57:12.956[0m | [1m[32mINFO    [0m | [36mskyrl.backends.skyrl_train.patches.megatron.patch_sparse_mla_nope[0m:[36mpatch_sparse_mla_nope[0m:[36m122[0m - [1m[32mApplied TileLang SparseMLA NoPE / unaligned top-k patch (NVIDIA/Megatron-LM#7617)[0m
+[32m2026-11-16 09:57:12.956[0m | [1m[32mINFO    [0m | [36mskyrl.backends.skyrl_train.patches.megatron.patch_vision_attention_backend[0m:[36mpatch_vision_attention_backend[0m:[36m59[0m - [1m[32mApplied Qwen3-VL vision encoder attention backend propagation patch[0m
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/models/gpt/gpt_layer_specs.py:198: UserWarning: The fp8 argument in "get_gpt_layer_with_transformer_engine_spec" has been deprecated and will be removed soon. Please update your code accordingly.
+  warnings.warn(
+[32m2026-11-16 09:57:13.143[0m | [33m[1mWARNING [0m | [36mmegatron.core._rank_utils[0m:[36mlog_single_rank[0m:[36m127[0m - [33m[1mGPTModel IS DEPRECATED. GPTModel is only accepting critical bug fixes, no new features. Please reference the migration guide `docs/user-guide/hybrid-model-migration.md` for details on how to use `HybridModel`[0m
+Loading from /chat-workspace/.cache/huggingface/hub/models--Qwen--Qwen3… … Qwen…
+[32m2026-11-16 09:57:21.846[0m | [33m[1mWARNING [0m | [36mmegatron.bridge.peft.module_matcher[0m:[36m_validate_target_matches[0m:[36m209[0m - [33m[1mNo modules matched the requested target_modules entries: in_proj, out_proj[0m
+[32m2026-11-16 09:57:21.873[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.0.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.876[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.0.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.877[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.0.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.878[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.0.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.880[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.1.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.880[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.1.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.882[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.1.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.882[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.1.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.884[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.2.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.885[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.2.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.886[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.2.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.887[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.2.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.888[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.3.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.889[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.3.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.890[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.3.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.891[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.3.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.892[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.4.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.893[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.4.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.894[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.4.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.896[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.4.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.897[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.5.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.898[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.5.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.899[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.5.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.900[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.5.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.901[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.6.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.902[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.6.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.904[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.6.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.904[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.6.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.906[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.7.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.907[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.7.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.908[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.7.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.909[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.7.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.910[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.8.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.911[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.8.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.912[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.8.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.913[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.8.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.914[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.9.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.915[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.9.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.917[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.9.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.917[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.9.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.919[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.10.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.920[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.10.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.921[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.10.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.922[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.10.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.923[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.11.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.924[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.11.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.925[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.11.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.926[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.11.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.927[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.12.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.928[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.12.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.929[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.12.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.930[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.12.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.932[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.13.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.932[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.13.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.934[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.13.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.934[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.13.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.936[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.14.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.937[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.14.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.938[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.14.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.939[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.14.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.940[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.15.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.941[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.15.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.943[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.15.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.943[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.15.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.945[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.16.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.946[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.16.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.947[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.16.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.948[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.16.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.949[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.17.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.950[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.17.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.951[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.17.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.952[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.17.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.953[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.18.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.954[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.18.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.955[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.18.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.956[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.18.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.958[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.19.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.959[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.19.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.960[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.19.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.961[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.19.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.962[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.20.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.963[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.20.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.964[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.20.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.965[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.20.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.966[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.21.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.967[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.21.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.968[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.21.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.969[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.21.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.971[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.22.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.971[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.22.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.973[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.22.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.973[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.22.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.975[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.23.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.976[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.23.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.977[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.23.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.978[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.layers.23.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.979[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.0.linear_fc1[0m
+[32m2026-11-16 09:57:21.980[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.0.linear_fc2[0m
+[32m2026-11-16 09:57:21.981[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.1.linear_fc1[0m
+[32m2026-11-16 09:57:21.982[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.1.linear_fc2[0m
+[32m2026-11-16 09:57:21.983[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.2.linear_fc1[0m
+[32m2026-11-16 09:57:21.984[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.decoder.deepstack_merger_list.2.linear_fc2[0m
+[32m2026-11-16 09:57:21.985[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.merger.linear_fc1[0m
+[32m2026-11-16 09:57:21.986[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: vision_model.merger.linear_fc2[0m
+[32m2026-11-16 09:57:21.987[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.0.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.988[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.0.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.989[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.0.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.990[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.0.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.992[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.1.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.993[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.1.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.994[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.1.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.995[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.1.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:21.996[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.2.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:21.997[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.2.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:21.998[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.2.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:21.999[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.2.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.000[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.3.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.001[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.3.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.002[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.3.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.003[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.3.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.004[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.4.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.005[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.4.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.006[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.4.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.007[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.4.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.009[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.5.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.010[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.5.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.011[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.5.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.012[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.5.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.013[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.6.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.014[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.6.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.015[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.6.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.016[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.6.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.018[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.7.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.019[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.7.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.020[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.7.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.021[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.7.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.022[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.8.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.023[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.8.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.024[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.8.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.025[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.8.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.026[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.9.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.027[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.9.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.028[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.9.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.029[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.9.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.031[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.10.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.031[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.10.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.033[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.10.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.034[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.10.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.035[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.11.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.036[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.11.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.037[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.11.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.038[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.11.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.039[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.12.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.040[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.12.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.041[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.12.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.042[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.12.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.043[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.13.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.044[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.13.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.046[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.13.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.046[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.13.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.048[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.14.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.049[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.14.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.050[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.14.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.051[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.14.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.052[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.15.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.053[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.15.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.054[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.15.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.055[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.15.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.056[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.16.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.057[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.16.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.058[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.16.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.059[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.16.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.060[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.17.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.062[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.17.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.063[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.17.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.064[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.17.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.065[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.18.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.066[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.18.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.067[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.18.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.068[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.18.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.069[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.19.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.070[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.19.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.071[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.19.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.072[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.19.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.073[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.20.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.074[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.20.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.075[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.20.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.076[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.20.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.078[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.21.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.079[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.21.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.080[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.21.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.081[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.21.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.082[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.22.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.083[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.22.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.084[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.22.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.085[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.22.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.086[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.23.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.087[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.23.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.088[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.23.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.089[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.23.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.091[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.24.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.091[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.24.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.093[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.24.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.093[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.24.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.095[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.25.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.097[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.25.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.098[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.25.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.099[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.25.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.100[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.26.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.101[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.26.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.102[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.26.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.103[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.26.mlp.linear_fc2[0m
+[32m2026-11-16 09:57:22.104[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.27.self_attention.linear_proj[0m
+[32m2026-11-16 09:57:22.105[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.27.self_attention.linear_qkv[0m
+[32m2026-11-16 09:57:22.106[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.27.mlp.linear_fc1[0m
+[32m2026-11-16 09:57:22.107[0m | [1m[32mINFO    [0m | [36mmegatron.bridge.peft.lora[0m:[36mtransform[0m:[36m226[0m - [1m[32mAdding lora to: language_model.decoder.layers.27.mlp.linear_fc2[0m
+ > number of parameters on (tensor, gtp_remat, pipeline) model parallel rank (0, 0, 0): 2138476544
+[32m2026-11-16 09:57:22.171[0m | [1m[32mINFO    [0m | [36mskyrl.backends.skyrl_train.distributed.megatron.megatron_utils[0m:[36mprint_model_size[0m:[36m82[0m - [1m[32mFloat16Module contains 2.14B parameters[0m
+Compile-time CUDA version: 13.0
+Run-time NVRTC version: 12.6
+Run-time CUDA headers version: 13.0
+
+Warning: CUDA versions do not match between NVRTC and CUDA headers (/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include). Consider changing the CUDA header search path (by setting NVTE_CUDA_INCLUDE_DIR) or the linked CUDA Runtime (by setting CUDA_HOME or LD_LIBRARY_PATH).
+
+NVRTC compilation log for ln_fwd_kernel.cu:
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(1460): error: this declaration has no storage class or type specifier
+      __NV_SILENCE_DEPRECATION_BEGIN
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(1461): error: expected a ";"
+      explicit __CUDA_HOSTDEVICE_FP8__ __nv_fp8x4_e5m2(const double4 f) {
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(1521): warning #12-D: parsing restarts here after previous syntax error
+  };
+  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2089): error: this declaration has no storage class or type specifier
+      __NV_SILENCE_DEPRECATION_BEGIN
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2090): error: expected a ";"
+      explicit __CUDA_HOSTDEVICE_FP8__ __nv_fp8x4_e4m3(const double4 f) {
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2150): warning #12-D: parsing restarts here after previous syntax error
+  };
+  ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2738): error: this declaration has no storage class or type specifier
+      __NV_SILENCE_DEPRECATION_BEGIN
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2739): error: expected a ";"
+      explicit __CUDA_HOSTDEVICE_FP8__ __nv_fp8x4_e8m0(const double4 f) {
+      ^
+
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/nvidia/cu13/include/cuda_fp8.hpp(2800): warning #12-D: parsing restarts here after previous syntax error
+  };
+  ^
+
+6 errors detected in the compilation of "ln_fwd_kernel.cu".
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 322, in <module>
+[rank0]:     main()
+[rank0]:   File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 286, in main
+[rank0]:     prepare_policy(args)
+[rank0]:   File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 217, in prepare_policy
+[rank0]:     base = score()
+[rank0]:            ^^^^^^^
+[rank0]:   File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 167, in score
+[rank0]:     result = worker.forward(batch)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/chat-workspace/SkyRL/skyrl/backends/skyrl_train/workers/megatron/megatron_worker.py", line 1295, in forward
+[rank0]:     log_probs = self._forward_logprobs(data)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/chat-workspace/SkyRL/skyrl/backends/skyrl_train/workers/megatron/megatron_worker.py", line 912, in _forward_logprobs
+[rank0]:     log_probs = self.model.forward(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/chat-workspace/SkyRL/skyrl/backends/skyrl_train/workers/megatron/megatron_model_wrapper.py", line 651, in forward
+[rank0]:     output = forward_backward_func(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/pipeline_parallel/schedules.py", line 833, in forward_backward_no_pipelining
+[rank0]:     output_tensor, num_tokens = forward_step(
+[rank0]:                                 ^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/pipeline_parallel/schedules.py", line 525, in forward_step
+[rank0]:     output_tensor, loss_func = forward_step_func(data_iterator, model)
+[rank0]:                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/chat-workspace/SkyRL/skyrl/backends/skyrl_train/workers/megatron/megatron_model_wrapper.py", line 627, in forward_step
+[rank0]:     outputs = model(
+[rank0]:               ^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/module.py", line 591, in forward
+[rank0]:     outputs = self.module(*inputs, **kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/models/qwen_vl/modelling_qwen3_vl/model.py", line 743, in forward
+[rank0]:     vision_embeds, deepstack_feature_lists = self.vision_model(
+[rank0]:                                              ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/models/qwen_vl/modelling_qwen3_vl/vision_model.py", line 354, in forward
+[rank0]:     hidden_states, deepstack_feature_lists = self.decoder(
+[rank0]:                                              ^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/transformer_block.py", line 521, in __call__
+[rank0]:     return super().__call__(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/module.py", line 416, in __call__
+[rank0]:     return super().__call__(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/models/qwen_vl/modelling_qwen3_vl/transformer_block.py", line 352, in forward
+[rank0]:     hidden_states, context = layer(
+[rank0]:                              ^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/module.py", line 416, in __call__
+[rank0]:     return super().__call__(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/transformer_layer.py", line 1137, in forward
+[rank0]:     hidden_states, context = self._forward_attention(*args, **kwargs)
+[rank0]:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/transformer_layer.py", line 843, in _forward_attention
+[rank0]:     attention_output_with_bias = self.self_attention(
+[rank0]:                                  ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/models/qwen_vl/modelling_qwen3_vl/attention.py", line 158, in forward
+[rank0]:     query, key, value = self.get_query_key_value_tensors(hidden_states, key_value_states)
+[rank0]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/transformer/attention.py", line 2002, in get_query_key_value_tensors
+[rank0]:     mixed_qkv, _ = apply_module(self.linear_qkv)(hidden_states)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/peft/lora_layers.py", line 80, in forward
+[rank0]:     linear_output, bias, layernorm_output = self.base_linear_forward(x, *args, **kwargs)
+[rank0]:                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/bridge/peft/adapter_wrapper.py", line 183, in base_linear_forward
+[rank0]:     linear_output = self.to_wrap(x, *args, **kwargs)
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/megatron/core/extensions/transformer_engine.py", line 1726, in forward
+[rank0]:     out = super().forward(x, is_first_microbatch=_is_first_microbatch)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/transformer_engine/pytorch/jit.py", line 83, in wrapper
+[rank0]:     return disabled_f(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/transformer_engine/pytorch/module/layernorm_linear.py", line 1809, in forward
+[rank0]:     out, ln_out, new_weight_workspace = fwd_fn(
+[rank0]:                                         ^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/transformer_engine/pytorch/module/layernorm_linear.py", line 257, in forward
+[rank0]:     ln_out, mu, rsigma = apply_normalization(
+[rank0]:                          ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/tmp/skyrl-megatron-uv/builds-v0/.tmpOobU9H/lib/python3.12/site-packages/transformer_engine/pytorch/module/_common.py", line 102, in apply_normalization
+[rank0]:     return normalization_func(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: /TransformerEngine/transformer_engine/common/util/rtc.cpp:242 in function compile: NVRTC Error: NVRTC_ERROR_COMPILATION

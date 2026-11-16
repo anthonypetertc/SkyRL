@@ -1,0 +1,4796 @@
+{
+  "adapters": [
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        3072,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        1024
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        1024,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.merger.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.merger.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.merger.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.vision_model.merger.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": true
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.self_attention.linear_proj.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.self_attention.linear_proj.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.self_attention.linear_qkv.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.self_attention.linear_qkv.adapter.linear_out.weight",
+      "shape": [
+        4096,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc1.adapter.linear_in.weight",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc1.adapter.linear_out.weight",
+      "shape": [
+        12288,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc2.adapter.linear_in.weight",
+      "shape": [
+        8,
+        6144
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    },
+    {
+      "name": "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc2.adapter.linear_out.weight",
+      "shape": [
+        2048,
+        8
+      ],
+      "dtype": "torch.bfloat16",
+      "requires_grad": true,
+      "visual": false
+    }
+  ],
+  "all_trainable_names": [
+    "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.0.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.1.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.decoder.deepstack_merger_list.2.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.vision_model.merger.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.vision_model.merger.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.vision_model.merger.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.vision_model.merger.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.0.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.0.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.0.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.1.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.1.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.1.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.2.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.2.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.2.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.3.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.3.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.3.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.4.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.4.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.4.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.5.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.5.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.5.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.6.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.6.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.6.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.7.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.7.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.7.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.8.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.8.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.8.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.9.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.9.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.9.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.10.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.10.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.10.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.11.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.11.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.11.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.12.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.12.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.12.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.13.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.13.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.13.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.14.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.14.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.14.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.15.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.15.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.15.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.16.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.16.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.16.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.17.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.17.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.17.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.18.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.18.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.18.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.19.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.19.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.19.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.20.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.20.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.20.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.21.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.21.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.21.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.22.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.22.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.22.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.23.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.23.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.23.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.24.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.24.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.24.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.24.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.24.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.25.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.25.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.25.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.25.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.25.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.26.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.26.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.26.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.26.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.26.mlp.linear_fc2.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.27.self_attention.linear_proj.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.27.self_attention.linear_proj.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.27.self_attention.linear_qkv.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.27.self_attention.linear_qkv.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc1.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc1.adapter.linear_out.weight",
+    "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc2.adapter.linear_in.weight",
+    "chunk0.module.language_model.decoder.layers.27.mlp.linear_fc2.adapter.linear_out.weight"
+  ],
+  "module_classes": [
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.attention.Qwen3VLSelfAttention",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.model.Qwen3VLModel",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.rope.Qwen3VLMultimodalRotaryEmbedding",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.text_model.Qwen3VLGPTModel",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.transformer_block.Qwen3VLTransformerBlock",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.transformer_block.Qwen3VLVisionTransformerBlock",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.utils.Qwen3VLVisionPatchEmbed",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.utils.Qwen3VLVisionPatchMerger",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.utils.Qwen3VLVisionRotaryEmbedding",
+    "megatron.bridge.models.qwen_vl.modelling_qwen3_vl.vision_model.Qwen3VLVisionModel",
+    "megatron.bridge.peft.lora_layers.LoRALinear",
+    "megatron.bridge.peft.utils.ParallelLinearAdapter",
+    "megatron.core.extensions.transformer_engine.TEColumnParallelLinear",
+    "megatron.core.extensions.transformer_engine.TEDotProductAttention",
+    "megatron.core.extensions.transformer_engine.TELayerNormColumnParallelLinear",
+    "megatron.core.extensions.transformer_engine.TERowParallelLinear",
+    "megatron.core.models.common.embeddings.language_model_embedding.LanguageModelEmbedding",
+    "megatron.core.tensor_parallel.layers.ColumnParallelLinear",
+    "megatron.core.tensor_parallel.layers.RowParallelLinear",
+    "megatron.core.tensor_parallel.layers.VocabParallelEmbedding",
+    "megatron.core.transformer.identity_op.IdentityFuncOp",
+    "megatron.core.transformer.identity_op.IdentityOp",
+    "megatron.core.transformer.mlp.MLP",
+    "megatron.core.transformer.module.Float16Module",
+    "megatron.core.transformer.transformer_layer.TransformerLayer",
+    "torch.nn.modules.container.ModuleList",
+    "torch.nn.modules.conv.Conv3d",
+    "torch.nn.modules.dropout.Dropout",
+    "torch.nn.modules.linear.Identity",
+    "torch.nn.modules.sparse.Embedding",
+    "transformer_engine.pytorch.attention.dot_product_attention.backends.FlashAttention",
+    "transformer_engine.pytorch.attention.dot_product_attention.backends.FusedAttention",
+    "transformer_engine.pytorch.attention.dot_product_attention.backends.UnfusedDotProductAttention",
+    "transformer_engine.pytorch.attention.dot_product_attention.softmax.FusedScaleMaskSoftmax",
+    "transformer_engine.pytorch.module.layernorm.LayerNorm",
+    "transformer_engine.pytorch.module.rmsnorm.RMSNorm"
+  ]
+}

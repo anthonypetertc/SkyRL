@@ -1,0 +1,50 @@
+{
+  "date_utc": "2026-11-16",
+  "primary_job": {
+    "name": "skyrl-megatron-vlm-cuda13-66969fb753d84aae60416f80a79667af",
+    "cluster": "aws",
+    "namespace": "core-gpu",
+    "status": "completed",
+    "duration_seconds": 263,
+    "gpu": "NVIDIA H100 80GB HBM3"
+  },
+  "command": "uv run --isolated --extra megatron python repro/vlm_tower_connector_lora/measure_megatron_logprobs.py --output-dir repro/vlm_tower_connector_lora/results/megatron_measurement",
+  "environment": {
+    "RAY_ADDRESS": "local",
+    "VLLM_WORKER_MULTIPROC_METHOD": "spawn",
+    "NVTE_FLASH_ATTN": "0",
+    "NVTE_FUSED_ATTN": "1",
+    "NVTE_UNFUSED_ATTN": "0",
+    "UV_CACHE_DIR": "/tmp/skyrl-megatron-uv",
+    "HF_HOME": "/chat-workspace/.cache/huggingface"
+  },
+  "runtime_limit_seconds": 1800,
+  "scope": "Single-rank native Megatron model initialization, policy forward and adapter export, then actual vLLM file loading and forward. No optimizer, DDP wrapping, multi-rank export, or remote publication transport.",
+  "primary_evidence_sha256": {
+    "policy.json": "06daa4451e63996b729c1de6542264f9247409dadc02e4ea5ac6f0ac0afeeb31",
+    "off.json": "b71026f373ab578b0e49e3bcf9cd3b7096378e517327f259fe9aa9ef33048ad3",
+    "on.json": "92fb3ba3bcd06195c2e0b0b9fd7084d7e04c4fabc15e4a49e502c1b447da7e3d",
+    "summary.json": "7bbfb03c641df919db74f6e532efa43f8b2c34cfe09fcb0aa99224c03c5e6771",
+    "megatron_parameters.json": "3b2e75c7dd26d1f2f7f4f105c4af46bd649f645311e4f045b2d397d478d4a246",
+    "megatron_export.json": "f010fcea08a77f8c98c986df5704dfcf5c0e1b6e4642e7fa6f880a2a952519f5",
+    "runtime_libraries.json": "4493805c4472f362661eda151b88062c5c019cba9edc68b99e04573363f14120"
+  },
+  "environment_failure": {
+    "job": "skyrl-megatron-vlm-runtime-55131e949f145363416780b4928c51c2",
+    "evidence": "attempt2_policy.log",
+    "cause": "TE runtime found base-image CUDA12.6 NVRTC while compiling installed CUDA13 headers; selected matching installed CUDA13 compiler and headers for completed run."
+  },
+  "hf_export_diagnostic": {
+    "job": "skyrl-megatron-hf-exact-e00d4a12b32b0df1abcc68e205d3f053",
+    "command": "Same Megatron command with --stage hf-export",
+    "tensor_dtype": "BF16",
+    "target_selection": "Exact artifact module paths in memory; exported tensors and files unchanged",
+    "first_attempt_failure": "Unmodified Bridge suffix config wraps HF patch_embed.proj absent from exported state; exact-path diagnostic corrects target selection only",
+    "evidence": "hf_export_diagnostic.json",
+    "status": "completed",
+    "duration_seconds": 103,
+    "first_attempt_job": "skyrl-megatron-hf-export-c20d7ff4af1736b2387853b45997231b",
+    "first_attempt_log": "hf_export_attempt1.log"
+  },
+  "log_processing": "Trailing whitespace removed from tracked logs; untrimmed originals retained in ignored .raw.log files. Primary JSON and adapter files unchanged."
+}

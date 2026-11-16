@@ -2,8 +2,11 @@
 
 Investigation against SkyRL commit `0cd3ad969e4be707e5cc96f5360b3458e32d7947`
 (the fork's `repro/vlm-tower-connector-lora` branch), using vLLM 0.33.0.
-No production fix is included. These scripts separate configuration evidence,
-Megatron source evidence, and an actual GPU loader/forward comparison.
+The investigation scripts and results live on `investigate/vlm-tower-lora-sync`;
+the revision above identifies the code being investigated.
+No production fix is included. These scripts record CPU configuration evidence,
+pinned Megatron source checks, and actual GPU policy/export/vLLM comparisons
+for both FSDP and Megatron.
 
 ## CPU reproduction: observed
 
@@ -44,9 +47,10 @@ not that a forward pass or silent failure has been demonstrated.
 
 ## Backend scope: architecture matters
 
-**FSDP is exposed. Megatron adapter-only sync is also exposed at the source level
-for dense Qwen3-VL with standard LoRA; calling this universally FSDP-only is too narrow.** This does not
-mean every Megatron VLM adapts its visual tower by default.
+**The visual-adapter omission is reproduced at runtime for both FSDP and
+Megatron adapter-only sync on dense Qwen3-VL with standard LoRA.** This does not
+mean every Megatron VLM adapts its visual tower by default. The Megatron runtime
+results below also show that enabling tower LoRA does not establish policy parity.
 
 The source-only check needs just Python's standard library and public network
 access. It fetches Megatron-Bridge at SkyRL's exact pinned revision
@@ -70,8 +74,9 @@ SkyRL constructs `SkyRLLoRA(LoRA)`, which adds no vision-freezing override;
 it does not construct Bridge's separate `VLMLoRA` class. Its adapter-only
 sync path invokes `bridge.export_adapter_weights` and publishes the resulting
 adapter to vLLM without a visual-key filter. Combined with the observed engine
-arguments, this establishes the same missing-flag mechanism for Qwen3-VL
-Megatron with `merge_lora=false`, subject to successful runtime export.
+arguments, this identifies the same missing-flag mechanism for Qwen3-VL
+Megatron with `merge_lora=false`. The native runtime experiment below confirms
+trainable visual adapters, actual export, and omission by flag-off vLLM.
 
 By contrast, the pinned Qwen2.5-VL bridge uses an HF vision tower. Its typical
 visual leaf names (`qkv`, `proj`, `gate_proj`, `up_proj`, `down_proj`, numeric
@@ -84,12 +89,12 @@ Custom targets can change the scope.
 adapter tower loader. This investigation makes no claim about every aspect
 of that separate sync path.
 
-**Evidence boundary:** no Megatron policy, optimizer, distributed collective,
-or runtime Megatron export was executed. The JSON records exact source URLs,
-content hashes, matched names, and resolved export names:
+**Source-check boundary:** this script executes no Megatron model. The separate
+GPU experiment below supplies native forward/export evidence. The source JSON
+records exact source URLs, content hashes, matched names, and resolved export names:
 [backend_scope.json](results/backend_scope.json).
 
-## GPU comparison
+## HF/FSDP GPU comparison
 
 [measure_logprobs.py](measure_logprobs.py) runs a pretrained
 `Qwen/Qwen3-VL-2B-Instruct` policy and vLLM in separate processes on one GPU.
@@ -175,9 +180,139 @@ script recreates them.
 
 **Limitations:** one image and continuation, deliberately seeded nonzero factors,
 no optimizer step, no distributed FSDP sharding or real HTTP/Ray sync transport,
-and no Megatron runtime export. The measurement uses a genuine pretrained VLM
+and no Megatron execution in this script. The measurement uses a genuine pretrained VLM
 and real vLLM forward passes; it measures loader correctness rather than an
 end-to-end RL training outcome. No inference about training collapse follows.
+
+## Megatron runtime experiment
+
+The companion [measure_megatron_logprobs.py](measure_megatron_logprobs.py) uses
+an actual `MegatronPolicyWorkerBase` for checkpoint loading, native policy
+forward passes, and `_save_lora_adapters_and_sync`. HF supplies the pinned
+checkpoint and input processor; primary policy scores come from Megatron.
+Run from the repository root:
+
+```bash
+RAY_ADDRESS=local VLLM_WORKER_MULTIPROC_METHOD=spawn \
+NVTE_FLASH_ATTN=0 NVTE_FUSED_ATTN=1 NVTE_UNFUSED_ATTN=0 \
+uv run --isolated --extra megatron python \
+  repro/vlm_tower_connector_lora/measure_megatron_logprobs.py \
+  --output-dir repro/vlm_tower_connector_lora/results/megatron_measurement \
+  > /tmp/skyrl_megatron_vlm_measurement.log 2>&1
+```
+
+This uses TP/PP/CP/EP=1, full-VLM standard LoRA, `merge_lora=false`, BF16, and
+inference-only initialization (no DDP buffers or optimizer). It scores the same
+image and 12 continuation tokens as the HF/FSDP experiment. Initially zero B
+factors provide a baseline. Name-seeded visual factors are then set nonzero,
+followed by language factors, with each adapter exported through the actual
+Megatron worker and loaded directly into vLLM. Publication uses a recording
+sink; it does not exercise HTTP/Ray transport or distributed export.
+
+The script records actual trainable adapter names, shapes, classes and dtypes,
+native policy scores, exported tensor nonzero counts, artifact hashes, and
+package revisions. It rejects a vision-only export with nonzero language B
+factors and rejects nonfinite scores or input alignment failures.
+
+The Platform base image also supplies CUDA 12.6, which Transformer Engine can
+find ahead of its installed CUDA-13 runtime compiler. The launcher explicitly
+selects the installed CUDA-13 NVRTC, matching builtins and headers before
+loading torch/TE, and records the selection and loaded NVRTC library paths.
+This repairs the runtime environment without modifying the model or weights.
+
+### Observed Megatron logprob divergence
+
+The native run completed on 2026-11-16 on one H100 80GB, using torch
+2.14.0+cu130, transformers 5.16.1, PEFT 0.21.0, vLLM 0.33.0, Transformer
+Engine 2.19.0, Megatron-Core `ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe`,
+and Megatron-Bridge `7171584bd7452caf2adfa6afd12fb89cc37fbc64`.
+The checkpoint is explicitly pinned to
+`89644892e4d85e24eaac8bacfd4f463576704203` for every stage.
+
+Native initialization produced **432 trainable adapter parameter tensors,
+including 208 visual tensors**. Each real Bridge export contains 600 tensors,
+including **208 nonzero visual tensors**, all BF16. Splitting native fused
+projections accounts for the larger exported tensor count. The vision-only
+artifact has **196 language B tensors, all zero**. All six vLLM requests were
+accepted, aligned, finite, and scored the same 12 continuation tokens.
+
+| Adapter | Flag off: max absolute Megatron−vLLM | Flag on: max absolute Megatron−vLLM | Off mean | On mean |
+|---|---:|---:|---:|---:|
+| Base, zero/no adapter | 0.124999 | 0.124999 | 0.033556 | 0.033556 |
+| Vision-only native export | 0.377460 | 0.374975 | 0.074628 | 0.075888 |
+| Full native export | 0.252431 | 0.623064 | 0.038353 | 0.098140 |
+
+All differences are in nats. **Flag-on worsened the full-adapter maximum and
+mean discrepancy in this run; it is not a demonstrated parity fix.** The base
+row also has a nonzero discrepancy. Different attention/linear kernels, native
+model implementation, internal position construction and tensor casting remain
+possible contributors; the table alone does not assign their causes. Processor
+tokens, pixels and grids are checked, but that does not establish identical
+internal computations in Megatron and vLLM.
+
+The isolated visual control establishes the omission independently of the
+cross-engine baseline:
+
+- Native Megatron's vision-only update changes logprobs by up to **0.252461**.
+- With the flag **off**, vLLM's vision-only scores equal base **exactly on all
+  12 tokens**: maximum visual effect **0.000000**.
+- With the flag **on**, the same native-exported artifact changes vLLM scores
+  by up to **0.489734**.
+- Base vLLM scores are identical across flag settings; the full-adapter scores
+  change by up to **0.370633**.
+
+Thus the missing-visual-update mechanism is confirmed for this real Megatron
+configuration. The flag activates a visual effect, while agreement with the
+native policy remains unresolved. This supports a fail/warn guardrail and
+does not support unconditionally auto-enabling the flag as a complete fix.
+vLLM emits ignored-visual-module warnings with the flag off.
+
+Evidence: [native policy scores](results/megatron_measurement/policy.json),
+[flag off](results/megatron_measurement/off.json),
+[flag on](results/megatron_measurement/on.json),
+[summary](results/megatron_measurement/summary.json),
+[parameter inventory](results/megatron_measurement/megatron_parameters.json),
+[export inspection](results/megatron_measurement/megatron_export.json),
+[verification](results/megatron_measurement/verification.json), and corresponding
+logs. Adapter binaries are excluded from Git and are recreated by the script.
+
+### Separate HF diagnostic of the Megatron artifacts
+
+The optional `--stage hf-export` loads the **unchanged exported tensors** into
+HF/PEFT with BF16 adapters (`autocast_adapter_dtype=false`) and eager attention.
+It selects exact module paths from the artifact keys **in memory**. Bridge's
+exported suffix targets include `proj`, which also matches HF's
+`visual.patch_embed.proj`; no corresponding adapter exists in the export.
+Loading the unmodified suffix config therefore produced missing adapter keys
+in the first diagnostic attempt. Exact-path selection avoids adding that
+unexported adapter; it does not validate unmodified-config HF loading.
+Neither the files nor the primary experiment are modified.
+
+Both artifacts passed bitwise tensor/dtype round-trip checks with no missing
+adapter or unexpected keys. HF used the same pinned checkpoint, tokens, image
+grid and normalized pixel hash. Maximum absolute logprob errors, in nats:
+
+| Adapter | Native Megatron−HF artifact | HF artifact−vLLM off | HF artifact−vLLM on |
+|---|---:|---:|---:|
+| Base | 0.244904 | 0.366848 | 0.366848 |
+| Vision-only | 0.336948 | 0.371655 | 0.124998 |
+| Full | 0.498013 | 0.390380 | 0.245493 |
+
+This diagnostic also lacks native-policy parity. Flag-on is closer to HF for
+these adapters, while the primary native Megatron comparison becomes worse
+for the full adapter. These observations cannot distinguish a conversion
+problem from execution or numerical differences. No specific cause for the
+remaining mismatch is established here.
+
+Evidence: [HF diagnostic](results/megatron_measurement/hf_export_diagnostic.json),
+[diagnostic log](results/megatron_measurement/hf_export_diagnostic.log), and
+[execution provenance](results/megatron_measurement/execution.json).
+
+**Scope:** a real single-rank Megatron forward/export/vLLM loader experiment
+for dense Qwen3-VL, full-VLM default LoRA, `merge_lora=false`. There is no
+optimizer step, DDP wrapping, multi-rank export, or remote publication transport.
+One image, one fixed continuation and seeded factors do not characterize the
+frequency or magnitude of drift in trained policies or other architectures.
 
 ## Correctness framing and candidate guardrail
 

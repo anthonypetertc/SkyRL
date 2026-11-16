@@ -1,0 +1,12 @@
+{
+  "nvrtc_library": "/tmp/skyrl-megatron-uv/builds-v0/.tmpOfuYgJ/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc.so.13",
+  "nvrtc_version": [
+    13,
+    0
+  ],
+  "nvrtc_builtins": [
+    "/tmp/skyrl-megatron-uv/builds-v0/.tmpOfuYgJ/lib/python3.12/site-packages/nvidia/cu13/lib/libnvrtc-builtins.so.13.0"
+  ],
+  "cuda_include": "/tmp/skyrl-megatron-uv/builds-v0/.tmpOfuYgJ/lib/python3.12/site-packages/nvidia/cu13/include",
+  "reason": "Avoid base-image CUDA-12.6 NVRTC with pinned CUDA-13 TE and headers"
+}

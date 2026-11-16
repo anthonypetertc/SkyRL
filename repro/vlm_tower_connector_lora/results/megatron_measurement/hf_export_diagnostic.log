@@ -1,0 +1,415 @@
+   Updating https://github.com/NVIDIA-NeMo/Megatron-Bridge (7171584bd7452caf2adfa6afd12fb89cc37fbc64)
+   Building skyrl @ file:///chat-workspace/SkyRL
+   Updating https://github.com/NVIDIA/Megatron-LM (ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe)
+   Building skyrl-gym @ file:///chat-workspace/SkyRL/skyrl-gym
+   Updating https://github.com/NVIDIA/nvidia-resiliency-ext (6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d)
+Downloading opencv-python-headless (58.4MiB)
+Downloading z3-solver (27.9MiB)
+Downloading nvidia-cuda-nvcc (45.5MiB)
+Downloading pynvvideocodec (41.2MiB)
+Downloading nccl-extensions (21.5MiB)
+Downloading av (34.1MiB)
+Downloading tokenspeed-triton (90.5MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading wandb (24.9MiB)
+Downloading nvidia-cutlass-dsl-libs-cu13 (87.7MiB)
+Downloading nixl-cu13 (73.8MiB)
+Downloading nvidia-cutlass-dsl-libs-cu12 (87.5MiB)
+Downloading ray (74.3MiB)
+Downloading triton (236.5MiB)
+Downloading tilelang (48.6MiB)
+Downloading pyarrow (47.8MiB)
+Downloading nvidia-nvvm (69.2MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading polars-runtime-32 (47.6MiB)
+Downloading nvidia-nccl-cu13 (206.0MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading llvmlite (53.7MiB)
+Downloading scipy (33.7MiB)
+Downloading flashinfer-python (59.2MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading vllm (320.8MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading numpy (15.8MiB)
+Downloading mamba-ssm (333.4MiB)
+Downloading torch (528.9MiB)
+Downloading torchvision (7.1MiB)
+Downloading transformer-engine-cu13 (242.4MiB)
+Downloading causal-conv1d (197.5MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading flash-attn (226.5MiB)
+Downloading vllm-router (13.0MiB)
+Downloading flash-mla (10.3MiB)
+Downloading flashinfer-jit-cache-sm103a (277.3MiB)
+Downloading flashinfer-cubin (1.6GiB)
+Downloading flashinfer-jit-cache-sm89 (110.2MiB)
+Downloading flashinfer-jit-cache-sm120f (185.7MiB)
+Downloading flashinfer-jit-cache-sm80 (111.8MiB)
+Downloading flashinfer-jit-cache-sm90a (284.2MiB)
+Downloading flashinfer-jit-cache-sm100a (272.4MiB)
+ Downloaded flash-mla
+Downloading fast-hadamard-transform (48.7MiB)
+Downloading pulp (15.6MiB)
+Downloading botocore (14.9MiB)
+ Downloaded vllm-router
+Downloading transformers (11.5MiB)
+    Updated https://github.com/NVIDIA/nvidia-resiliency-ext (6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d)
+   Building nvidia-resiliency-ext @ git+https://github.com/NVIDIA/nvidia-resiliency-ext@6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d
+ Downloaded torchvision
+Downloading mlflow (11.1MiB)
+ Downloaded fast-hadamard-transform
+Downloading nvidia-cudnn-frontend (11.1MiB)
+ Downloaded numpy
+ Downloaded transformers
+Downloading pandas (10.3MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
+ Downloaded mlflow
+Downloading matplotlib (9.4MiB)
+ Downloaded botocore
+ Downloaded pulp
+Downloading torchcodec (9.0MiB)
+Downloading scikit-learn (8.7MiB)
+ Downloaded nccl-extensions
+Downloading onnx (8.5MiB)
+ Downloaded wandb
+Downloading pycountry (7.7MiB)
+ Downloaded flashinfer-jit-cache-sm89
+Downloading cuda-bindings (6.8MiB)
+ Downloaded nvidia-cudnn-frontend
+ Downloaded pandas
+Downloading pillow (6.8MiB)
+Downloading grpcio (6.8MiB)
+ Downloaded nvidia-cuda-cupti
+ Downloaded z3-solver
+ Downloaded scikit-learn
+ Downloaded matplotlib
+ Downloaded torchcodec
+Downloading cuda-core (6.3MiB)
+Downloading sympy (6.0MiB)
+Downloading tensorboard-data-server (6.3MiB)
+Downloading instanttensor (6.2MiB)
+Downloading mistral-common (6.3MiB)
+ Downloaded flashinfer-jit-cache-sm80
+Downloading diffusers (5.6MiB)
+ Downloaded pycountry
+ Downloaded onnx
+ Downloaded cuda-bindings
+Downloading zstandard (5.3MiB)
+ Downloaded pillow
+ Downloaded grpcio
+ Downloaded cuda-core
+ Downloaded sympy
+ Downloaded tensorboard-data-server
+ Downloaded scipy
+ Downloaded av
+ Downloaded instanttensor
+ Downloaded mistral-common
+Downloading tensorboard (5.3MiB)
+ Downloaded diffusers
+Downloading fonttools (5.1MiB)
+Downloading debugpy (4.8MiB)
+Downloading cryptography (4.5MiB)
+Downloading hf-xet (4.3MiB)
+ Downloaded zstandard
+Downloading s5cmd (4.7MiB)
+Downloading nvidia-cuda-cccl (3.7MiB)
+Downloading uvloop (4.2MiB)
+ Downloaded flashinfer-jit-cache-sm120f
+Downloading numba (3.6MiB)
+Downloading oss-harmony (3.4MiB)
+Downloading hf-transfer (3.4MiB)
+Downloading sqlalchemy (3.3MiB)
+Downloading nccl4py (3.5MiB)
+Downloading mlflow-skinny (3.6MiB)
+ Downloaded causal-conv1d
+Downloading tokenizers (3.2MiB)
+ Downloaded nvidia-nvjitlink
+    Updated https://github.com/NVIDIA/Megatron-LM (ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe)
+   Building megatron-core @ git+https://github.com/NVIDIA/Megatron-LM@ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe
+Downloading llguidance (2.9MiB)
+ Downloaded pynvvideocodec
+ Downloaded hf-xet
+ Downloaded hf-transfer
+ Downloaded uvloop
+ Downloaded numba
+ Downloaded s5cmd
+ Downloaded nvidia-cuda-cccl
+Downloading nvidia-cutlass-dsl-libs-base (2.9MiB)
+Downloading apache-tvm-ffi (2.6MiB)
+ Downloaded debugpy
+Downloading timm (2.5MiB)
+ Downloaded cryptography
+ Downloaded tensorboard
+ Downloaded mlflow-skinny
+Downloading outlines-core (2.2MiB)
+ Downloaded fonttools
+ Downloaded nccl4py
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading grpcio-tools (2.6MiB)
+Downloading networkx (2.0MiB)
+Downloading pydantic-core (2.0MiB)
+Downloading fastsafetensors (2.0MiB)
+Downloading nvidia-modelopt (2.0MiB)
+ Downloaded tokenizers
+Downloading aiohttp (1.8MiB)
+ Downloaded llguidance
+ Downloaded oss-harmony
+ Downloaded sqlalchemy
+Downloading torchaudio (1.7MiB)
+Downloading openai (1.6MiB)
+Downloading mlflow-tracing (1.7MiB)
+ Downloaded grpcio-tools
+Downloading dulwich (1.4MiB)
+Downloading open-clip-torch (1.5MiB)
+ Downloaded apache-tvm-ffi
+ Downloaded networkx
+Downloading nvidia-cutlass-dsl-libs-core (1.6MiB)
+ Downloaded nvidia-cuda-runtime
+ Downloaded fastsafetensors
+ Downloaded nvidia-cuda-nvcc
+ Downloaded pydantic-core
+Downloading kiwisolver (1.4MiB)
+ Downloaded nvidia-modelopt
+ Downloaded timm
+ Downloaded nvidia-cutlass-dsl-libs-base
+ Downloaded outlines-core
+Downloading anthropic (1.3MiB)
+ Downloaded aiohttp
+Downloading sentencepiece (1.3MiB)
+Downloading pygments (1.2MiB)
+Downloading transformer-engine (1.1MiB)
+Downloading xgrammar (1.3MiB)
+Downloading transformer-engine-torch (1.1MiB)
+ Downloaded torchaudio
+ Downloaded mlflow-tracing
+Downloading fla-core (1.0MiB)
+Downloading nvidia-cufile (1.2MiB)
+Downloading tiktoken (1.1MiB)
+ Downloaded openai
+Downloading setuptools (1.0MiB)
+ Downloaded transformer-engine-torch
+Downloading databricks-sdk (1.0MiB)
+ Downloaded transformer-engine
+ Downloaded polars-runtime-32
+ Downloaded nvidia-cutlass-dsl-libs-core
+ Downloaded fla-core
+ Downloaded dulwich
+ Downloaded pygments
+ Downloaded kiwisolver
+ Downloaded pyarrow
+ Downloaded nvidia-cufile
+ Downloaded sentencepiece
+ Downloaded xgrammar
+ Downloaded open-clip-torch
+ Downloaded anthropic
+ Downloaded setuptools
+ Downloaded tilelang
+ Downloaded tiktoken
+ Downloaded databricks-sdk
+ Downloaded llvmlite
+ Downloaded nvidia-nvshmem-cu13
+   Building func-timeout==4.3.5
+ Downloaded opencv-python-headless
+ Downloaded flashinfer-python
+ Downloaded transformer-engine-cu13
+ Downloaded nvidia-curand
+   Building antlr4-python3-runtime==4.9.3
+ Downloaded flashinfer-jit-cache-sm100a
+ Downloaded flashinfer-jit-cache-sm90a
+ Downloaded nvidia-nvvm
+ Downloaded flash-attn
+ Downloaded mamba-ssm
+      Built func-timeout==4.3.5
+ Downloaded flashinfer-jit-cache-sm103a
+      Built antlr4-python3-runtime==4.9.3
+ Downloaded nixl-cu13
+      Built skyrl-gym @ file:///chat-workspace/SkyRL/skyrl-gym
+ Downloaded ray
+ Downloaded torch
+      Built nvidia-resiliency-ext @ git+https://github.com/NVIDIA/nvidia-resiliency-ext@6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d
+    Updated https://github.com/NVIDIA-NeMo/Megatron-Bridge (7171584bd7452caf2adfa6afd12fb89cc37fbc64)
+   Building megatron-bridge @ git+https://github.com/NVIDIA-NeMo/Megatron-Bridge@7171584bd7452caf2adfa6afd12fb89cc37fbc64
+      Built skyrl @ file:///chat-workspace/SkyRL
+      Built megatron-core @ git+https://github.com/NVIDIA/Megatron-LM@ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cutlass-dsl-libs-cu13
+ Downloaded nvidia-cutlass-dsl-libs-cu12
+ Downloaded tokenspeed-triton
+ Downloaded nvidia-cusparse
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-cufft
+ Downloaded nvidia-nccl-cu13
+ Downloaded triton
+ Downloaded vllm
+ Downloaded nvidia-cublas
+ Downloaded nvidia-cudnn-cu13
+      Built megatron-bridge @ git+https://github.com/NVIDIA-NeMo/Megatron-Bridge@7171584bd7452caf2adfa6afd12fb89cc37fbc64
+ Downloaded flashinfer-cubin
+Installed 341 packages in 1.91s
+W1116 10:11:22.948000 784 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:11:22.949000 784 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:11:22.949000 784 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:11:22.956000 784 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:11:22.956000 784 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:11:22.956000 784 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:11:22.963000 784 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:11:22.963000 784 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:11:22.963000 784 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:11:22.968000 784 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:11:22.968000 784 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:11:22.968000 784 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOfuYgJ/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]Loading weights:   5%|▍         | 30/625 [00:00<00:04, 123.88it/s]Loading weights:   7%|▋         | 43/625 [00:00<00:05, 99.53it/s] Loading weights:   8%|▊         | 53/625 [00:00<00:10, 56.39it/s]Loading weights:  12%|█▏        | 74/625 [00:00<00:07, 72.11it/s]Loading weights:  13%|█▎        | 83/625 [00:01<00:07, 71.05it/s]Loading weights:  15%|█▍        | 91/625 [00:01<00:08, 65.13it/s]Loading weights:  16%|█▌        | 98/625 [00:01<00:09, 56.13it/s]Loading weights:  17%|█▋        | 104/625 [00:01<00:10, 47.64it/s]Loading weights:  17%|█▋        | 109/625 [00:01<00:10, 47.59it/s]Loading weights:  18%|█▊        | 114/625 [00:01<00:10, 46.77it/s]Loading weights:  21%|██        | 131/625 [00:02<00:07, 69.55it/s]Loading weights:  22%|██▏       | 139/625 [00:02<00:10, 47.50it/s]Loading weights:  25%|██▍       | 156/625 [00:02<00:07, 60.72it/s]Loading weights:  26%|██▌       | 163/625 [00:02<00:07, 58.08it/s]Loading weights:  28%|██▊       | 177/625 [00:02<00:06, 66.88it/s]Loading weights:  30%|██▉       | 185/625 [00:02<00:06, 69.21it/s]Loading weights:  32%|███▏      | 199/625 [00:03<00:05, 76.14it/s]Loading weights:  33%|███▎      | 208/625 [00:03<00:05, 74.65it/s]Loading weights:  35%|███▌      | 220/625 [00:03<00:06, 65.04it/s]Loading weights:  38%|███▊      | 237/625 [00:03<00:05, 76.78it/s]Loading weights:  39%|███▉      | 245/625 [00:03<00:05, 70.96it/s]Loading weights:  43%|████▎     | 268/625 [00:03<00:03, 101.32it/s]Loading weights:  45%|████▌     | 283/625 [00:03<00:03, 107.85it/s]Loading weights:  47%|████▋     | 295/625 [00:04<00:03, 104.40it/s]Loading weights:  49%|████▉     | 308/625 [00:04<00:03, 102.89it/s]Loading weights:  53%|█████▎    | 331/625 [00:04<00:02, 129.66it/s]Loading weights:  57%|█████▋    | 355/625 [00:04<00:01, 144.02it/s]Loading weights:  61%|██████▏   | 384/625 [00:04<00:01, 179.47it/s]Loading weights:  66%|██████▌   | 411/625 [00:04<00:01, 196.38it/s]Loading weights:  72%|███████▏  | 448/625 [00:04<00:00, 234.06it/s]Loading weights:  78%|███████▊  | 487/625 [00:04<00:00, 257.04it/s]Loading weights:  82%|████████▏ | 514/625 [00:05<00:00, 237.27it/s]Loading weights:  88%|████████▊ | 553/625 [00:05<00:00, 274.71it/s]Loading weights:  93%|█████████▎| 582/625 [00:05<00:00, 261.58it/s]Loading weights:  97%|█████████▋| 609/625 [00:05<00:00, 239.66it/s]Loading weights: 100%|██████████| 625/625 [00:05<00:00, 113.31it/s]
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]Loading weights: 100%|██████████| 625/625 [00:00<00:00, 6933.28it/s]
+/tmp/skyrl-megatron-uv/builds-v0/.tmpOfuYgJ/lib/python3.12/site-packages/peft/mapping_func.py:154: UserWarning: The PEFT config's `base_model_name_or_path` was renamed from '/chat-workspace/.cache/huggingface/hub/models--Qwen--Qwen3-VL-2B-Instruct/snapshots/89644892e4d85e24eaac8bacfd4f463576704203' to 'Qwen/Qwen3-VL-2B-Instruct'. Please ensure that the correct base model is loaded when loading this checkpoint.
+  warnings.warn(
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]Loading weights:  93%|█████████▎| 584/625 [00:00<00:00, 5839.63it/s]Loading weights: 100%|██████████| 625/625 [00:00<00:00, 6040.82it/s]
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "adapter_dtype": "bfloat16",
+  "attention": "eager",
+  "cases": {
+    "base": {
+      "hf_logprobs": [
+        -11.758716583251953,
+        -4.018152713775635,
+        -0.06611324101686478,
+        -0.02989215776324272,
+        -0.02532065473496914,
+        -0.31795525550842285,
+        -0.00016223068814724684,
+        -0.00042083943844772875,
+        -0.05144178867340088,
+        -3.4420998096466064,
+        -0.0491473414003849,
+        -0.006324277725070715
+      ],
+      "adapter_load": null,
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.2449038028717041,
+          "mean_abs": 0.035087364820356015
+        },
+        "vllm_off": {
+          "max_abs": 0.3668484687805176,
+          "mean_abs": 0.042883419857389526
+        },
+        "vllm_on": {
+          "max_abs": 0.3668484687805176,
+          "mean_abs": 0.042883419857389526
+        }
+      }
+    },
+    "vision_only": {
+      "hf_logprobs": [
+        -11.633705139160156,
+        -4.018153667449951,
+        -0.06867703050374985,
+        -0.04611113667488098,
+        -0.019957803189754486,
+        -0.3860585391521454,
+        -0.00011681827891152352,
+        -0.00021586472576018423,
+        -0.07395713776350021,
+        -3.2055816650390625,
+        -0.0628242939710617,
+        -0.004963101353496313
+      ],
+      "adapter_load": {
+        "sha256": "ce553769e051b1352c582e3501358da6a057f1108be033e456446db9ac689182",
+        "tensor_count": 600,
+        "missing_adapter_keys": [],
+        "unexpected_keys": [],
+        "tensors_and_dtypes_exact": true,
+        "original_target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "linear_fc1",
+          "linear_fc2",
+          "o_proj",
+          "proj",
+          "q_proj",
+          "qkv",
+          "up_proj",
+          "v_proj"
+        ],
+        "target_selection": "Exact module paths from artifact keys; no tensor changes"
+      },
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.3369483947753906,
+          "mean_abs": 0.05277464057326142
+        },
+        "vllm_off": {
+          "max_abs": 0.3716554641723633,
+          "mean_abs": 0.08362111491078394
+        },
+        "vllm_on": {
+          "max_abs": 0.12499809265136719,
+          "mean_abs": 0.026361853606431396
+        }
+      }
+    },
+    "full": {
+      "hf_logprobs": [
+        -11.75677490234375,
+        -3.8955469131469727,
+        -0.06131977587938309,
+        -0.04151660203933716,
+        -0.01832905411720276,
+        -0.3866097033023834,
+        -0.00014494798961095512,
+        -0.0003805628512054682,
+        -0.09350526332855225,
+        -3.089716911315918,
+        -0.06286918371915817,
+        -0.004932497162371874
+      ],
+      "adapter_load": {
+        "sha256": "2393858b8934377ee432d0e1d9d86bba860f29197e8433caf8deb7148897ab17",
+        "tensor_count": 600,
+        "missing_adapter_keys": [],
+        "unexpected_keys": [],
+        "tensors_and_dtypes_exact": true,
+        "original_target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "linear_fc1",
+          "linear_fc2",
+          "o_proj",
+          "proj",
+          "q_proj",
+          "qkv",
+          "up_proj",
+          "v_proj"
+        ],
+        "target_selection": "Exact module paths from artifact keys; no tensor changes"
+      },
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.4980125427246094,
+          "mean_abs": 0.10028048017071949
+        },
+        "vllm_off": {
+          "max_abs": 0.3903801441192627,
+          "mean_abs": 0.08010133020676828
+        },
+        "vllm_on": {
+          "max_abs": 0.24549341201782227,
+          "mean_abs": 0.046894736574662
+        }
+      }
+    }
+  },
+  "complete": true
+}

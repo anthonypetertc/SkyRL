@@ -1,0 +1,142 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "adapter_dtype": "bfloat16",
+  "attention": "eager",
+  "cases": {
+    "base": {
+      "hf_logprobs": [
+        -11.758716583251953,
+        -4.018152713775635,
+        -0.06611324101686478,
+        -0.02989215776324272,
+        -0.02532065473496914,
+        -0.31795525550842285,
+        -0.00016223068814724684,
+        -0.00042083943844772875,
+        -0.05144178867340088,
+        -3.4420998096466064,
+        -0.0491473414003849,
+        -0.006324277725070715
+      ],
+      "adapter_load": null,
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.2449038028717041,
+          "mean_abs": 0.035087364820356015
+        },
+        "vllm_off": {
+          "max_abs": 0.3668484687805176,
+          "mean_abs": 0.042883419857389526
+        },
+        "vllm_on": {
+          "max_abs": 0.3668484687805176,
+          "mean_abs": 0.042883419857389526
+        }
+      }
+    },
+    "vision_only": {
+      "hf_logprobs": [
+        -11.633705139160156,
+        -4.018153667449951,
+        -0.06867703050374985,
+        -0.04611113667488098,
+        -0.019957803189754486,
+        -0.3860585391521454,
+        -0.00011681827891152352,
+        -0.00021586472576018423,
+        -0.07395713776350021,
+        -3.2055816650390625,
+        -0.0628242939710617,
+        -0.004963101353496313
+      ],
+      "adapter_load": {
+        "sha256": "ce553769e051b1352c582e3501358da6a057f1108be033e456446db9ac689182",
+        "tensor_count": 600,
+        "missing_adapter_keys": [],
+        "unexpected_keys": [],
+        "tensors_and_dtypes_exact": true,
+        "original_target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "linear_fc1",
+          "linear_fc2",
+          "o_proj",
+          "proj",
+          "q_proj",
+          "qkv",
+          "up_proj",
+          "v_proj"
+        ],
+        "target_selection": "Exact module paths from artifact keys; no tensor changes"
+      },
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.3369483947753906,
+          "mean_abs": 0.05277464057326142
+        },
+        "vllm_off": {
+          "max_abs": 0.3716554641723633,
+          "mean_abs": 0.08362111491078394
+        },
+        "vllm_on": {
+          "max_abs": 0.12499809265136719,
+          "mean_abs": 0.026361853606431396
+        }
+      }
+    },
+    "full": {
+      "hf_logprobs": [
+        -11.75677490234375,
+        -3.8955469131469727,
+        -0.06131977587938309,
+        -0.04151660203933716,
+        -0.01832905411720276,
+        -0.3866097033023834,
+        -0.00014494798961095512,
+        -0.0003805628512054682,
+        -0.09350526332855225,
+        -3.089716911315918,
+        -0.06286918371915817,
+        -0.004932497162371874
+      ],
+      "adapter_load": {
+        "sha256": "2393858b8934377ee432d0e1d9d86bba860f29197e8433caf8deb7148897ab17",
+        "tensor_count": 600,
+        "missing_adapter_keys": [],
+        "unexpected_keys": [],
+        "tensors_and_dtypes_exact": true,
+        "original_target_modules": [
+          "down_proj",
+          "gate_proj",
+          "k_proj",
+          "linear_fc1",
+          "linear_fc2",
+          "o_proj",
+          "proj",
+          "q_proj",
+          "qkv",
+          "up_proj",
+          "v_proj"
+        ],
+        "target_selection": "Exact module paths from artifact keys; no tensor changes"
+      },
+      "comparisons": {
+        "megatron": {
+          "max_abs": 0.4980125427246094,
+          "mean_abs": 0.10028048017071949
+        },
+        "vllm_off": {
+          "max_abs": 0.3903801441192627,
+          "mean_abs": 0.08010133020676828
+        },
+        "vllm_on": {
+          "max_abs": 0.24549341201782227,
+          "mean_abs": 0.046894736574662
+        }
+      }
+    }
+  },
+  "complete": true
+}

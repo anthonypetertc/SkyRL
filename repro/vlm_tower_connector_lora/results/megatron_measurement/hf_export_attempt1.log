@@ -1,0 +1,283 @@
+   Updating https://github.com/NVIDIA-NeMo/Megatron-Bridge (7171584bd7452caf2adfa6afd12fb89cc37fbc64)
+   Updating https://github.com/NVIDIA/Megatron-LM (ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe)
+   Updating https://github.com/NVIDIA/nvidia-resiliency-ext (6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d)
+   Building skyrl @ file:///chat-workspace/SkyRL
+   Building skyrl-gym @ file:///chat-workspace/SkyRL/skyrl-gym
+Downloading scipy (33.7MiB)
+Downloading numpy (15.8MiB)
+Downloading av (34.1MiB)
+Downloading torch (528.9MiB)
+Downloading mamba-ssm (333.4MiB)
+Downloading torchvision (7.1MiB)
+Downloading causal-conv1d (197.5MiB)
+Downloading transformer-engine-cu13 (242.4MiB)
+Downloading wandb (24.9MiB)
+Downloading z3-solver (27.9MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading pynvvideocodec (41.2MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-cuda-nvcc (45.5MiB)
+Downloading nvidia-nvvm (69.2MiB)
+Downloading triton (236.5MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading nixl-cu13 (73.8MiB)
+Downloading flashinfer-python (59.2MiB)
+Downloading nccl-extensions (21.5MiB)
+Downloading nvidia-cutlass-dsl-libs-cu12 (87.5MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
+Downloading ray (74.3MiB)
+Downloading tokenspeed-triton (90.5MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading vllm (320.8MiB)
+Downloading nvidia-cutlass-dsl-libs-cu13 (87.7MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading polars-runtime-32 (47.6MiB)
+Downloading llvmlite (53.7MiB)
+Downloading opencv-python-headless (58.4MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading pyarrow (47.8MiB)
+Downloading tilelang (48.6MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading nvidia-nccl-cu13 (206.0MiB)
+Downloading fast-hadamard-transform (48.7MiB)
+Downloading vllm-router (13.0MiB)
+Downloading flash-attn (226.5MiB)
+Downloading flash-mla (10.3MiB)
+Downloading flashinfer-jit-cache-sm103a (277.3MiB)
+Downloading flashinfer-cubin (1.6GiB)
+Downloading flashinfer-jit-cache-sm90a (284.2MiB)
+Downloading flashinfer-jit-cache-sm89 (110.2MiB)
+Downloading flashinfer-jit-cache-sm80 (111.8MiB)
+Downloading flashinfer-jit-cache-sm100a (272.4MiB)
+Downloading flashinfer-jit-cache-sm120f (185.7MiB)
+Downloading pulp (15.6MiB)
+ Downloaded torchvision
+ Downloaded flash-mla
+Downloading botocore (14.9MiB)
+Downloading transformers (11.5MiB)
+ Downloaded vllm-router
+Downloading mlflow (11.1MiB)
+    Updated https://github.com/NVIDIA/nvidia-resiliency-ext (6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d)
+   Building nvidia-resiliency-ext @ git+https://github.com/NVIDIA/nvidia-resiliency-ext@6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d
+ Downloaded fast-hadamard-transform
+Downloading nvidia-cudnn-frontend (11.1MiB)
+ Downloaded transformers
+Downloading pandas (10.3MiB)
+ Downloaded mlflow
+Downloading nvidia-cuda-cupti (10.2MiB)
+ Downloaded flashinfer-jit-cache-sm89
+Downloading matplotlib (9.4MiB)
+ Downloaded numpy
+ Downloaded flashinfer-jit-cache-sm80
+Downloading scikit-learn (8.7MiB)
+Downloading torchcodec (9.0MiB)
+ Downloaded botocore
+ Downloaded pulp
+Downloading onnx (8.5MiB)
+Downloading pycountry (7.7MiB)
+ Downloaded causal-conv1d
+Downloading cuda-bindings (6.8MiB)
+ Downloaded nvidia-cudnn-frontend
+Downloading grpcio (6.8MiB)
+    Updated https://github.com/NVIDIA/Megatron-LM (ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe)
+   Building megatron-core @ git+https://github.com/NVIDIA/Megatron-LM@ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe
+ Downloaded nccl-extensions
+Downloading pillow (6.8MiB)
+ Downloaded pandas
+Downloading cuda-core (6.3MiB)
+ Downloaded transformer-engine-cu13
+ Downloaded wandb
+Downloading tensorboard-data-server (6.3MiB)
+ Downloaded scikit-learn
+ Downloaded matplotlib
+Downloading mistral-common (6.3MiB)
+ Downloaded pycountry
+Downloading sympy (6.0MiB)
+Downloading instanttensor (6.2MiB)
+ Downloaded nvidia-cuda-cupti
+Downloading diffusers (5.6MiB)
+ Downloaded torchcodec
+Downloading zstandard (5.3MiB)
+ Downloaded onnx
+ Downloaded flashinfer-jit-cache-sm120f
+ Downloaded cuda-bindings
+ Downloaded mamba-ssm
+ Downloaded grpcio
+ Downloaded z3-solver
+ Downloaded pillow
+Downloading debugpy (4.8MiB)
+Downloading tensorboard (5.3MiB)
+ Downloaded flash-attn
+Downloading fonttools (5.1MiB)
+Downloading hf-xet (4.3MiB)
+Downloading cryptography (4.5MiB)
+Downloading numba (3.6MiB)
+Downloading nvidia-cuda-cccl (3.7MiB)
+Downloading uvloop (4.2MiB)
+Downloading s5cmd (4.7MiB)
+ Downloaded tensorboard-data-server
+ Downloaded zstandard
+ Downloaded flashinfer-jit-cache-sm103a
+Downloading oss-harmony (3.4MiB)
+Downloading mlflow-skinny (3.6MiB)
+Downloading nccl4py (3.5MiB)
+ Downloaded diffusers
+Downloading hf-transfer (3.4MiB)
+ Downloaded sympy
+ Downloaded mistral-common
+Downloading sqlalchemy (3.3MiB)
+ Downloaded instanttensor
+ Downloaded cuda-core
+Downloading tokenizers (3.2MiB)
+Downloading llguidance (2.9MiB)
+Downloading nvidia-cutlass-dsl-libs-base (2.9MiB)
+ Downloaded flashinfer-jit-cache-sm90a
+ Downloaded numba
+Downloading apache-tvm-ffi (2.6MiB)
+Downloading grpcio-tools (2.6MiB)
+ Downloaded nvidia-cuda-cccl
+Downloading timm (2.5MiB)
+ Downloaded scipy
+Downloading outlines-core (2.2MiB)
+ Downloaded hf-xet
+ Downloaded av
+ Downloaded uvloop
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading networkx (2.0MiB)
+ Downloaded cryptography
+Downloading fastsafetensors (2.0MiB)
+Downloading nvidia-modelopt (2.0MiB)
+ Downloaded debugpy
+ Downloaded fonttools
+Downloading pydantic-core (2.0MiB)
+ Downloaded tensorboard
+ Downloaded oss-harmony
+ Downloaded mlflow-skinny
+ Downloaded llguidance
+Downloading aiohttp (1.8MiB)
+Downloading torchaudio (1.7MiB)
+Downloading mlflow-tracing (1.7MiB)
+ Downloaded nvidia-cutlass-dsl-libs-base
+ Downloaded hf-transfer
+Downloading openai (1.6MiB)
+Downloading nvidia-cutlass-dsl-libs-core (1.6MiB)
+ Downloaded nccl4py
+ Downloaded s5cmd
+Downloading open-clip-torch (1.5MiB)
+ Downloaded sqlalchemy
+Downloading kiwisolver (1.4MiB)
+ Downloaded tokenizers
+Downloading sentencepiece (1.3MiB)
+Downloading anthropic (1.3MiB)
+Downloading xgrammar (1.3MiB)
+Downloading dulwich (1.4MiB)
+ Downloaded outlines-core
+ Downloaded grpcio-tools
+ Downloaded apache-tvm-ffi
+Downloading pygments (1.2MiB)
+ Downloaded nvidia-cuda-runtime
+Downloading tiktoken (1.1MiB)
+Downloading nvidia-cufile (1.2MiB)
+ Downloaded networkx
+ Downloaded timm
+Downloading transformer-engine (1.1MiB)
+Downloading fla-core (1.0MiB)
+Downloading transformer-engine-torch (1.1MiB)
+ Downloaded fastsafetensors
+ Downloaded transformer-engine-torch
+ Downloaded nvidia-cutlass-dsl-libs-core
+Downloading setuptools (1.0MiB)
+ Downloaded transformer-engine
+ Downloaded sentencepiece
+ Downloaded kiwisolver
+ Downloaded open-clip-torch
+ Downloaded openai
+ Downloaded mlflow-tracing
+Downloading databricks-sdk (1.0MiB)
+ Downloaded xgrammar
+ Downloaded torchaudio
+ Downloaded anthropic
+ Downloaded pydantic-core
+ Downloaded aiohttp
+ Downloaded dulwich
+ Downloaded pygments
+ Downloaded nvidia-modelopt
+ Downloaded nvidia-cufile
+ Downloaded tiktoken
+ Downloaded fla-core
+ Downloaded setuptools
+ Downloaded databricks-sdk
+   Building func-timeout==4.3.5
+   Building antlr4-python3-runtime==4.9.3
+ Downloaded nvidia-nvjitlink
+ Downloaded pynvvideocodec
+ Downloaded flashinfer-jit-cache-sm100a
+ Downloaded nvidia-cuda-nvcc
+ Downloaded torch
+ Downloaded polars-runtime-32
+ Downloaded pyarrow
+      Built func-timeout==4.3.5
+      Built antlr4-python3-runtime==4.9.3
+      Built skyrl-gym @ file:///chat-workspace/SkyRL/skyrl-gym
+ Downloaded llvmlite
+ Downloaded nvidia-curand
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded opencv-python-headless
+ Downloaded flashinfer-python
+ Downloaded tilelang
+ Downloaded nvidia-nvvm
+      Built nvidia-resiliency-ext @ git+https://github.com/NVIDIA/nvidia-resiliency-ext@6c5f2a13c7688d92a7ac7ee6e464721eb8b7345d
+    Updated https://github.com/NVIDIA-NeMo/Megatron-Bridge (7171584bd7452caf2adfa6afd12fb89cc37fbc64)
+   Building megatron-bridge @ git+https://github.com/NVIDIA-NeMo/Megatron-Bridge@7171584bd7452caf2adfa6afd12fb89cc37fbc64
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cutlass-dsl-libs-cu13
+ Downloaded nvidia-cutlass-dsl-libs-cu12
+ Downloaded tokenspeed-triton
+ Downloaded nixl-cu13
+      Built skyrl @ file:///chat-workspace/SkyRL
+ Downloaded ray
+ Downloaded nvidia-cusparse
+      Built megatron-core @ git+https://github.com/NVIDIA/Megatron-LM@ed9c2c8c1cf4a5438922ae8d215181e7c8b9e0fe
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-cufft
+ Downloaded nvidia-nccl-cu13
+ Downloaded triton
+ Downloaded vllm
+ Downloaded nvidia-cublas
+ Downloaded nvidia-cudnn-cu13
+      Built megatron-bridge @ git+https://github.com/NVIDIA-NeMo/Megatron-Bridge@7171584bd7452caf2adfa6afd12fb89cc37fbc64
+ Downloaded flashinfer-cubin
+Installed 341 packages in 1.92s
+W1116 10:08:38.321000 782 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:08:38.322000 782 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:08:38.322000 782 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:08:38.329000 782 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:08:38.329000 782 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:08:38.329000 782 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:08:38.335000 782 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:08:38.335000 782 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:08:38.335000 782 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1116 10:08:38.340000 782 torch/_library/opaque_object.py:381] is_opaque_value_type is deprecated, use is_opaque_constant_type instead
+W1116 10:08:38.340000 782 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1116 10:08:38.340000 782 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+/tmp/skyrl-megatron-uv/builds-v0/.tmpPnRaFB/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]Loading weights:   5%|▍         | 31/625 [00:00<00:02, 204.26it/s]Loading weights:   8%|▊         | 52/625 [00:00<00:07, 79.06it/s] Loading weights:  10%|█         | 64/625 [00:00<00:07, 79.81it/s]Loading weights:  12%|█▏        | 74/625 [00:00<00:07, 71.02it/s]Loading weights:  14%|█▍        | 88/625 [00:01<00:07, 74.05it/s]Loading weights:  16%|█▌        | 97/625 [00:01<00:07, 68.53it/s]Loading weights:  17%|█▋        | 105/625 [00:01<00:09, 56.40it/s]Loading weights:  19%|█▉        | 120/625 [00:01<00:07, 63.85it/s]Loading weights:  21%|██        | 132/625 [00:01<00:08, 59.75it/s]Loading weights:  22%|██▏       | 139/625 [00:02<00:08, 58.00it/s]Loading weights:  24%|██▍       | 149/625 [00:02<00:07, 61.83it/s]Loading weights:  26%|██▌       | 164/625 [00:02<00:06, 74.42it/s]Loading weights:  28%|██▊       | 172/625 [00:02<00:06, 72.11it/s]Loading weights:  29%|██▉       | 183/625 [00:02<00:06, 71.12it/s]Loading weights:  31%|███       | 191/625 [00:02<00:07, 61.32it/s]Loading weights:  33%|███▎      | 207/625 [00:02<00:05, 79.27it/s]Loading weights:  35%|███▍      | 216/625 [00:02<00:05, 79.66it/s]Loading weights:  37%|███▋      | 229/625 [00:03<00:04, 81.00it/s]Loading weights:  39%|███▉      | 243/625 [00:03<00:04, 87.24it/s]Loading weights:  40%|████      | 252/625 [00:03<00:04, 79.37it/s]Loading weights:  42%|████▏     | 261/625 [00:03<00:04, 77.16it/s]Loading weights:  43%|████▎     | 269/625 [00:03<00:04, 72.51it/s]Loading weights:  46%|████▌     | 287/625 [00:03<00:03, 94.55it/s]Loading weights:  48%|████▊     | 297/625 [00:03<00:03, 82.39it/s]Loading weights:  52%|█████▏    | 324/625 [00:04<00:02, 125.43it/s]Loading weights:  55%|█████▍    | 341/625 [00:04<00:02, 127.01it/s]Loading weights:  60%|█████▉    | 374/625 [00:04<00:01, 174.96it/s]Loading weights:  64%|██████▍   | 403/625 [00:04<00:01, 193.83it/s]Loading weights:  70%|███████   | 440/625 [00:04<00:00, 229.54it/s]Loading weights:  75%|███████▍  | 466/625 [00:04<00:00, 218.84it/s]Loading weights:  80%|████████  | 501/625 [00:04<00:00, 234.83it/s]Loading weights:  84%|████████▍ | 528/625 [00:04<00:00, 241.85it/s]Loading weights:  92%|█████████▏| 574/625 [00:05<00:00, 281.84it/s]Loading weights:  96%|█████████▋| 603/625 [00:05<00:00, 257.18it/s]Loading weights: 100%|██████████| 625/625 [00:05<00:00, 117.57it/s]
+Loading weights:   0%|          | 0/625 [00:00<?, ?it/s]Loading weights: 100%|██████████| 625/625 [00:00<00:00, 7761.07it/s]
+/tmp/skyrl-megatron-uv/builds-v0/.tmpPnRaFB/lib/python3.12/site-packages/peft/mapping_func.py:154: UserWarning: The PEFT config's `base_model_name_or_path` was renamed from '/chat-workspace/.cache/huggingface/hub/models--Qwen--Qwen3-VL-2B-Instruct/snapshots/89644892e4d85e24eaac8bacfd4f463576704203' to 'Qwen/Qwen3-VL-2B-Instruct'. Please ensure that the correct base model is loaded when loading this checkpoint.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 470, in <module>
+    if __name__ == "__main__":
+        ^^^^^^
+  File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 434, in main
+    elif args.stage == "hf-export":
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/chat-workspace/SkyRL/repro/vlm_tower_connector_lora/measure_megatron_logprobs.py", line 389, in diagnose_hf_export
+    missing = [key for key in load_result.missing_keys if ".lora_" in key]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (['base_model.model.model.visual.patch_embed.proj.lora_A.default.weight', 'base_model.model.model.visual.patch_embed.proj.lora_B.default.weight'], [])

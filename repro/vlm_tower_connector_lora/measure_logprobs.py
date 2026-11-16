@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import math
 import subprocess
 import sys
 import traceback
@@ -266,7 +267,10 @@ def rollout(args):
         "model_revision": args.revision,
     }
     for adapter_id, (name, directory) in enumerate(
-        [("base", None), ("vision_only", "vision_only"), ("full", "skyrl_fsdp_full")], start=1
+        policy.get(
+            "adapter_directories", [("base", None), ("vision_only", "vision_only"), ("full", "skyrl_fsdp_full")]
+        ),
+        start=1,
     ):
         try:
             adapter = LoRARequest(name, adapter_id, str((args.output_dir / directory).resolve())) if directory else None
@@ -316,7 +320,9 @@ def summarize(args):
             if not data["adapter_accepted"] or not data.get("alignment_verified") or "error" in data:
                 rows.append({"flag": stage, "case": case, "error": data.get("error", "Alignment not verified")})
                 continue
-            reference = policy["hf_" + case]
+            reference_backend = policy.get("reference_backend", "hf")
+            reference = policy[reference_backend + "_" + case]
+            assert all(math.isfinite(value) for value in reference + data["logprobs"]), "Nonfinite scores"
             diffs = [abs(a - b) for a, b in zip(reference, data["logprobs"], strict=True)]
             rows.append(
                 {
@@ -336,15 +342,20 @@ def summarize(args):
             and "error" not in vision
         ):
             effects = [v - b for v, b in zip(vision["logprobs"], base["logprobs"], strict=True)]
-            hf_effects = [v - b for v, b in zip(policy["hf_vision_only"], policy["hf_base"], strict=True)]
+            reference_backend = policy.get("reference_backend", "hf")
+            reference_effects = [
+                v - b
+                for v, b in zip(
+                    policy[reference_backend + "_vision_only"], policy[reference_backend + "_base"], strict=True
+                )
+            ]
             direct_effects.append(
                 {
                     "flag": stage,
                     "vllm_vision_only_minus_base": effects,
                     "max_abs_visual_effect": max(map(abs, effects)),
-                    "max_abs_effect_difference_from_hf": max(
-                        abs(a - b) for a, b in zip(effects, hf_effects, strict=True)
-                    ),
+                    "max_abs_effect_difference_from_"
+                    + reference_backend: max(abs(a - b) for a, b in zip(effects, reference_effects, strict=True)),
                 }
             )
     complete = len(rows) == 6 and all("error" not in row for row in rows)

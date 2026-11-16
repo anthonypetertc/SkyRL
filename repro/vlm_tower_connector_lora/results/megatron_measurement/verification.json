@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "requests_checked": 6,
+  "tokens_per_request": 12,
+  "all_scores_finite": true,
+  "all_input_alignments_verified": true,
+  "summary_recomputed": true,
+  "export_visual_nonzero": true,
+  "vision_only_language_B_zero": true,
+  "artifact_hashes_verified": true,
+  "artifact_dtype_verified": "BF16",
+  "artifact_data_independently_inspected": true,
+  "hf_summary_regression_unchanged": true,
+  "hf_export_diagnostic_complete": true,
+  "hf_export_scores_finite": true,
+  "hf_export_comparisons_recomputed": true,
+  "primary_evidence_unchanged_after_diagnostic": true
+}
