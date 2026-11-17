@@ -1,8 +1,6 @@
-# Full-VLM LoRA reproduction
+# FSDP VLM LoRA reproduction
 
-## CPU reproduction: observed
-
-[cpu_check.py](cpu_check.py) checks SkyRL's LoRA targets and vLLM arguments
+[cpu_check.py](cpu_check.py) checks SkyRL's FSDP LoRA targets and vLLM arguments
 using a tiny, randomly initialized Qwen3-VL. No GPU or model download is needed.
 
 Run from the repository root:
@@ -17,9 +15,8 @@ CUDA_VISIBLE_DEVICES='' uv run --isolated --extra fsdp python \
 Observed at the affected revision with vLLM 0.33.0:
 
 - Full VLM: **28 visual adapter tensors**; language-only control: **zero**.
-- FSDP and Megatron adapter-only configurations enable LoRA but leave
-  `enable_tower_connector_lora=false`.
+- FSDP enables rollout LoRA but leaves `enable_tower_connector_lora=false`.
+- An explicit engine override sets the tower flag to `true`.
 
-This is a configuration check; it does not run vLLM inference or a Megatron model.
-
-[Full investigation and GPU results](INVESTIGATION.md).
+This checks configuration and adapter contents; it does not run distributed FSDP
+or vLLM inference.

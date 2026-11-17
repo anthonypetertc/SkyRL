@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Original lightweight configuration probe for VLM tower/connector LoRA.
+"""Original lightweight FSDP configuration probe for VLM tower/connector LoRA.
 
 This checks SkyRL engine arguments and PEFT keys on a stand-in VLM. It does
 not run a vLLM forward and cannot establish whether an adapter is ignored,
-rejected, or warned about. See cpu_check.py for a real tiny HF VLM CPU check,
-backend_scope.py for pinned Megatron source checks, and measure_logprobs.py
-for the GPU policy/rollout comparison. See README.md for measured findings.
+rejected, or warned about. See cpu_check.py for the canonical reproduction
+using a real tiny HF VLM, README.md for CPU instructions, and measure_logprobs.py
+for the FSDP-export policy/rollout comparison on GPU.
 
 Run from the repository root:
     CUDA_VISIBLE_DEVICES='' uv run --isolated --extra fsdp python \

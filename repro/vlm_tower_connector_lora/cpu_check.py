@@ -1,4 +1,4 @@
-"""CPU-only, offline check of SkyRL's argument construction and PEFT targets.
+"""CPU-only check of SkyRL's FSDP VLM LoRA targets and vLLM arguments.
 
 Run from the repository root with CUDA_VISIBLE_DEVICES='' and the fsdp extra.
 No distributed process group, Ray actors, model download, or CUDA tensor is used.
@@ -59,20 +59,18 @@ def adapter_keys(language_only):
     return sorted(state)
 
 
-def engine_case(strategy, merge, language_only, override=None):
+def engine_case(language_only, override=None):
     cfg = SkyRLTrainConfig()
-    cfg.trainer.strategy = strategy
+    cfg.trainer.strategy = "fsdp"
     cfg.trainer.policy.model.path = "Qwen/Qwen3-VL-2B-Instruct"
     cfg.trainer.policy.model.lora.rank = 8
     cfg.trainer.policy.language_model_only = language_only
-    cfg.trainer.policy.megatron_config.lora_config.merge_lora = merge
     cfg.generator.inference_engine.language_model_only = language_only
     if override is not None:
         cfg.generator.inference_engine.engine_init_kwargs = {"enable_tower_connector_lora": override}
     args = build_vllm_cli_args(cfg)
     return {
-        "strategy": strategy,
-        "merge_lora": merge,
+        "strategy": cfg.trainer.strategy,
         "language_model_only": language_only,
         "override": override,
         "enable_lora": args.enable_lora,
@@ -89,26 +87,22 @@ def main():
 
     full_keys, text_keys = adapter_keys(False), adapter_keys(True)
     visual_keys = [key for key in full_keys if ".visual." in key]
-    assert visual_keys and not any(".visual." in key for key in text_keys)
-    cases = [
-        engine_case(strategy, merge, language_only, override)
-        for strategy, merge in [("fsdp", True), ("megatron", True), ("megatron", False)]
-        for language_only in [False, True]
-        for override in [None, True]
-    ]
+    text_visual_keys = [key for key in text_keys if ".visual." in key]
+    assert visual_keys and not text_visual_keys
+    cases = [engine_case(language_only, override) for language_only in [False, True] for override in [None, True]]
     assert LoRAConfig().enable_tower_connector_lora is False
     for case in cases:
-        assert case["enable_lora"] == (case["strategy"] == "fsdp" or not case["merge_lora"])
+        assert case["enable_lora"] is True
         assert case["enable_tower_connector_lora"] == (case["override"] is True)
     result = {
         "versions": {name: importlib.metadata.version(name) for name in ("torch", "peft", "transformers", "vllm")},
         "cuda_available": torch.cuda.is_available(),
         "visual_adapter_tensor_count": len(visual_keys),
         "full_adapter_tensor_count": len(full_keys),
-        "text_only_visual_tensor_count": 0,
+        "text_only_visual_tensor_count": len(text_visual_keys),
         "visual_adapter_keys": visual_keys,
         "cases": cases,
-        "scope": "Actual SkyRL CLI builder and HF/PEFT target selection; no vLLM forward or Megatron model execution.",
+        "scope": "FSDP configuration and actual HF/PEFT target selection; no distributed worker or vLLM forward.",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
